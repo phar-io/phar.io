@@ -4,12 +4,9 @@
     <head>
         <meta charset="utf-8">
         <title>PHAR.IO</title>
-        <meta name="description"
-              content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
+        <meta name="description" content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="css/styles.css" type="text/css" media="all and (min-width:0px)">
-        <!--[if IE]><![endif]-->
         <!--[if lte IE 8]>
         <link rel="stylesheet" href="css/oldie.css">
         <![endif]-->
@@ -25,17 +22,8 @@
             <span class="ym-hideme">PHAR.IO</span>
         </h1>
 
-        <div class="ym-wrapper topcnt">
-        </div>
-        <div class="ym-wrapper secondtopcnt">
-        </div>
-        </div>
-        <div class="ym-wrapper schwarz">
-            <div class="ym-wbox-header">
+        <div class="ym-wrapper topcnt"></div>
 
-            </div>
-        </div>
-        <!-- / header  -->
 
         <div class="ym-wrapper layoutcnt" id="content">
             <div class="ym-wbox">
@@ -50,7 +38,7 @@
                             needed.</p>
                     </div>
                     <div class="ym-g50 ym-gr ym-gbox right">
-                        <p>Alternatively, you could have used composer. Aand cluttered your project’s dependencies with the ones
+                        <p>Alternatively, you could have used composer. Only to cluttere your project’s dependencies with the ones
                             of your tools. And fight their potential dependency conflicts.</p>
 
                         <p>No more! Now can rely on PHIVE to install and manage your projects tooling needs without all the
@@ -60,7 +48,6 @@
 
             </div>
         </div>
-        <!-- /block1.inc -->
 
         <div class="ym-wrapper zitatcnt phive">
             <div class="ym-wbox">
@@ -74,7 +61,7 @@
         <div class="ym-wrapper zitatcnt mittelgrau">
             <div class="ym-wbox">
                 <h3 class="opensans">The PHAR Installation and Verification Environment (PHIVE)</h3>
-                <h4>Installation and verification of <a href="http://php.net/phar">phar</a> distributed PHP applications has never been this easy!</h4>
+                <h4>Installation and verification of <a class="link" href="http://php.net/phar">phar</a> distributed PHP applications has never been this easy!</h4>
             </div>
         </div>
 
@@ -87,13 +74,15 @@
             <div class="ym-wbox">
                 <p class="big">Installation of PHIVE is easy and about the last time you have to do anything PHAR related manually.</p>
 
-                <p class="big">Grab your copy of PHIVE from the section at our github page or follow these 5 simple steps:</p>
+                <p class="big">Grab your copy of PHIVE from the <a href="https://github.com/phar-io/phive/releases">releases section</a> or run these 5 simple steps in a terminal:</p>
                 <pre><code>wget -o https://phar.io/releases/phive.phar
 gpg --keyserver hkps.pool.sks-keyservers.net --recv-keys 0x9B2D5D79
 gpg --verify https://phar.io/releases/phive.phar.asc phive.phar
 chmod +x phive.phar
 sudo mv phive.phar /usr/bin/phive</code></pre>
             </div>
+
+
         </div>
         <div class="ym-wrapper zitatcnt dark">
             <div class="ym-wbox">
@@ -103,37 +92,18 @@ sudo mv phive.phar /usr/bin/phive</code></pre>
         <div class="ym-wrapper alternatecolor1 layoutcnt2 centered">
             <div class="ym-wbox">
                 <p class="big">Once installed, PHIVE is ready for action. Some example invocations are shown below:</p>
-            <pre><code>phive install
-phive install phpunit
+            <pre><code>phive install phpunit
 phive install --copy phpdox
 phive install phpdox bin/phpdox
 phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
-            </div>
-            <!-- /.ym-wbox -->
-        </div>
-        <!-- /.ym-wrapper bereiche hell bd-top-2 -->
-        <div class="ym-wrapper layoutcnt alternatecolor2">
-            <div class="ym-wbox">
-                <h3 class="centered">Adding PHIVE support to your own project</h3>
-
-                <div class="ym-grid">
-                    <div class="ym-g50 ym-gl ym-gbox-left">
-                        <h4>Getting started</h4>
-
-                        <p>To leverage the power of PHIVE, you donít need to do anything but install the tools you need using
-                            the phive executable. PHIVE will automatically record your changes in an xml configuration file so
-                            you can replay the process as needed.</p>
-                    </div>
-                    <div class="ym-g50 ym-gr ym-gbox right">
-                        <h4>Advanced</h4>
-
-                        <p>To support for more advanced uses and to be able to replay an installation, a PHIVE configuration
-                            file can of course also be added to your project manually. Running phive skel will get you an
-                            annotated example configuration file to get you started.</p>
-                    </div>
+                <div class="centered error">
+                    <p class="big">PHIVE is currently in alpha testing and still under heavy development.<br/>Please bear with us and report any <a style="color: #000;" href="https://github.com/phar-io/phive/issues">issues</a> you find!</p>
                 </div>
             </div>
+
         </div>
+
+<!--
         <div class="ym-wrapper layoutcnt mittelgrau">
             <div class="ym-wbox centered">
                 <h2>PHAR.IO Project Database</h2>
@@ -147,29 +117,31 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
                 </form>
             </div>
         </div>
-        <!-- /block1.inc -->
+-->
         <div class="ym-wrapper layoutcnt2 blau">
             <div class="ym-wbox list">
-                <h3 class="centered">Popular Projects</h3>
+                <h3 class="centered">Currently known Projects</h3>
 
                 <div class="ym-grid">
                     <div class="ym-g50 ym-gl ym-gbox-left">
                         <ul>
                             <li>Composer</li>
-                            <li> PHPUnit</li>
+                            <li>PHPUnit</li>
                             <li>phpDox</li>
                         </ul>
                     </div>
                     <div class="ym-g50 ym-gr ym-gbox right">
                         <ul>
                             <li>PHP MessDetector</li>
-                            <li> PHP CodeSniffer</li>
+                            <li>PHP CodeSniffer</li>
+                            <li>... more to come!</li>
                         </ul>
                     </div>
                 </div>
+
             </div>
         </div>
-        <!-- /block1.inc -->
+
         <div class="ym-wrapper layoutcnt">
             <div class="ym-wbox">
                 <h3 class="centered">How it works</h3>
@@ -192,6 +164,7 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
                     repository server.</p>
             </div>
         </div>
+        <!--
         <div class="ym-wrapper zitatcnt mittelgrau">
             <div class="ym-wbox">
                 <h3>PHIVE repository</h3>
@@ -200,35 +173,24 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
         <div class="ym-wrapper alternatecolor1 layoutcnt2">
             <div class="ym-wbox">
                 <p>To make your phar based project available to PHIVE users, you need to provide a download location either by
-                    following some simple conventions or by generating a metadata file. The later can be automated using
-                    [toolx].</p>
-
-                <p>If no metadata file can be found, Phive will assume that auto indexing for the repository base url is enabled
-                    and the resulting HTML document contains links to all downloadable phars. Each phar’s filename has to follow
-                    this pattern:</p>
-
-                <p><strong>projectname-&lt;semantic version&gt;<br>
-                    projectname-nightly</strong></p>
+                    following some simple conventions or soon by generating a metadata file.</p>
             </div>
-            <!-- /.ym-wbox -->
         </div>
-        <div class="ym-wrapper layoutcnt2 centered">
+        -->
+        <div class="ym-wrapper layoutcnt2 blau centered">
             <div class="ym-wbox">
                 <h3>Contributing</h3>
-                <a class="formbutton" href="#">Fork us!</a>
 
                 <p class="big">PHIVE and PHAR.IO are open source projects relesaed under the BSD license. You are welcome to
-                    join the development team!<br/>
-                    Please refer to the document for more details.</p>
+                    join the development team!
+                </p>
+
+                <a class="formbutton" href="https://github.com/phar-io/">Fork us!</a>
             </div>
         </div>
 
-        <div class="ym-wrapper blau centered" id="footer">
-            <div class="ym-wbox">
-                <a class="big" href="imprint.html">Imprint</a>
-
-
-            </div>
+        <div class="ym-wrapper mittelgrau centered" id="footer">
+            <div class="ym-wbox">Copyright &copy; 2015 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The Phar.io Development team</a></div>
             <a class="oben" href="#top">top</a>
         </div>
     </body>
