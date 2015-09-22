@@ -2,7 +2,7 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="https://phar.io/repository" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="repository" type="rep:repositoryType" xmlns:rep="https://phar.io/repository"/>
   <xs:complexType name="pharType">
-    <xs:sequence>
+    <xs:sequence maxOccurs="unbounded">
       <xs:element type="rep:releaseType" name="release" xmlns:rep="https://phar.io/repository"/>
     </xs:sequence>
     <xs:attribute type="xs:string" name="name" use="required"/>
