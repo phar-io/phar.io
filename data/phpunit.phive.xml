@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<repository xmlns="https://phar.io/repository"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://phar.io/repository https://phar.io/data/repository.xsd">
+
+    <phar name="phpunit">
+        <release version="4.8.9" url="https://phar.phpunit.de/phpunit-4.8.9.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="675c01c852a5894c62361953a9f096701e846da8"/>
+        </release>
+        <release version="4.8.8" url="https://phar.phpunit.de/phpunit-4.8.8.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="53ec2cb856d75f3b75a677a5c68a8b056f2ee809"/>
+        </release>
+        <release version="4.8.7" url="https://phar.phpunit.de/phpunit-4.8.7.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="96c2092218c8eda5412a70c6346ec3ed0d15ecfa"/>
+        </release>
+        <release version="4.8.6" url="https://phar.phpunit.de/phpunit-4.8.6.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="e07700281a2d2188de04775c537b6a1ee0f13456" />
+        </release>
+        <release version="4.8.5" url="https://phar.phpunit.de/phpunit-4.8.5.phar">
+            <signature type="gpg" url="https://phar.phpunit.de/phpunit-4.8.5.phar.asc"/>
+            <hash type="sha-1" value="2fff85b87a30de8747f80a68563cd71f794fd4d2" />
+        </release>
+    </phar>
+
+</repository>

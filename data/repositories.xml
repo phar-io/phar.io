@@ -2,7 +2,7 @@
 <repositories xmlns="https://phar.io/repository-list">
 
     <phar alias="phpunit">
-        <repository url="https://phpunit.phar.io"/>
+        <repository url="https://phar.io/data/phpunit.phive.xml"/>
     </phar>
 
 </repositories>
