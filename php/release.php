@@ -21,10 +21,15 @@ switch($requestedFile) {
         break;
     }
     default: {
-        header('Not Found', 404);
-        die('404');
+        $target = '';
     }
 }
 
-header('Location: ' . $target , 302);
-die('Forwarded to ' . $target);
+if ($target != '') {
+    header('Location: ' . $target , 302);
+    die('Forwarded to ' . $target);
+}
+
+header('Not Found', 404);
+die('404');
+
