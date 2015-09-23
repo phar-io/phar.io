@@ -9,4 +9,8 @@
         <repository url="https://phar.io/data/phpab.phive.xml"/>
     </phar>
 
+    <phar alias="phpdox">
+        <repository url="https://phar.io/data/phpdox.phive.xml"/>
+    </phar>
+
 </repositories>
