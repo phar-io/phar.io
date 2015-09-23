@@ -5,4 +5,8 @@
         <repository url="https://phar.io/data/phpunit.phive.xml"/>
     </phar>
 
+    <phar alias="phpab">
+        <repository url="https://phar.io/data/phpab.phive.xml"/>
+    </phar>
+
 </repositories>

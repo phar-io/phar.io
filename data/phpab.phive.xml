@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<repository xmlns="https://phar.io/repository"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:schemaLocation="https://phar.io/repository https://phar.io/data/repository.xsd">
+
+    <phar name="phpab">
+        <release version="1.20.0" url="https://github.com/theseer/Autoload/releases/download/1.20.0/phpab-1.20.0.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="52d12671f6ae24ca1096de34dd6f53ebc58609a6"/>
+        </release>
+        <release version="1.19.2" url="https://github.com/theseer/Autoload/releases/download/1.19.2/phpab-1.19.2.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="bcd5ff571e7926c944e7e420b32e792766915ff1"/>
+        </release>
+        <release version="1.19.1" url="https://github.com/theseer/Autoload/releases/download/1.19.1/phpab-1.19.1.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="06c561e6e39062dd5f50826453b10a34ffdd83ee"/>
+        </release>
+        <release version="1.19.0" url="https://github.com/theseer/Autoload/releases/download/1.19.0/phpab-1.19.0.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="207a566e623a08bbeaabb10066a5c4d6abb85f5c"/>
+        </release>
+        <release version="1.18.0" url="https://github.com/theseer/Autoload/releases/download/1.18.0/phpab-1.18.0.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="7a26babdbba1a3e702ec81f9b20bb099d09d5a9b"/>
+        </release>
+    </phar>
+
+</repository>
