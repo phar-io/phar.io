@@ -3,6 +3,24 @@
             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             xsi:schemaLocation="https://phar.io/repository https://phar.io/data/repository.xsd">
 
+    <phar name="phpcpd">
+        <release version="2.0.2" url="https://phar.phpunit.de/phpcpd-2.0.2.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="aa43f08c9402ca142f607fa2db0b1152cf248d49"/>
+        </release>
+    </phar>
+    
+    <phar name="phploc">
+        <release version="2.1.4" url="https://phar.phpunit.de/phploc-2.1.4.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="b78f4d85b4ba2743573c44fbce70d6371f93703b"/>
+        </release>
+        <release version="2.1.3" url="https://phar.phpunit.de/phploc-2.1.3.phar">
+            <signature type="gpg"/>
+            <hash type="sha-1" value="174f7e679a514cf52fd63c96659b10d470e65ec0"/>
+        </release>
+    </phar>
+
     <phar name="phpunit">
         <release version="4.8.9" url="https://phar.phpunit.de/phpunit-4.8.9.phar">
             <signature type="gpg"/>
