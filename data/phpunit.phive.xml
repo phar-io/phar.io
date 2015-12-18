@@ -6,41 +6,37 @@
     <phar name="phpcpd">
         <release version="2.0.2" url="https://phar.phpunit.de/phpcpd-2.0.2.phar">
             <signature type="gpg"/>
-            <hash type="sha-1" value="aa43f08c9402ca142f607fa2db0b1152cf248d49"/>
+            <hash type="sha-256" value="8a45aa560e332e663d6c6ac10e1ba543410b748467bdc62724ca6b530b760ca6"/>
         </release>
     </phar>
     
     <phar name="phploc">
+        <release version="2.1.5" url="https://phar.phpunit.de/phploc-2.1.5.phar">
+            <signature type="gpg"/>
+            <hash type="sha-256" value="dff1369013230e82856fa7f75ed95461d31bb9a08533f1f6c76ae90d7781ea45"/>
+        </release>
         <release version="2.1.4" url="https://phar.phpunit.de/phploc-2.1.4.phar">
             <signature type="gpg"/>
             <hash type="sha-1" value="b78f4d85b4ba2743573c44fbce70d6371f93703b"/>
         </release>
-        <release version="2.1.3" url="https://phar.phpunit.de/phploc-2.1.3.phar">
-            <signature type="gpg"/>
-            <hash type="sha-1" value="174f7e679a514cf52fd63c96659b10d470e65ec0"/>
-        </release>
     </phar>
 
     <phar name="phpunit">
+        <release version="5.1.3" url="https://phar.phpunit.de/phpunit-5.1.3.phar">
+            <signature type="gpg"/>
+            <hash type="sha-256" value="2edf843f94e4b27e6557f96634e2896bcc630b6ccbd9e3f0d74cd158654690bb"/>
+        </release>
+        <release version="5.1.2" url="https://phar.phpunit.de/phpunit-5.1.2.phar">
+            <signature type="gpg"/>
+            <hash type="sha-256" value="5c981bea1ab3e2788250fad00328c0cd817079752944f99f8852cae5e01ee035"/>
+        </release>
+        <release version="5.0.9" url="https://phar.phpunit.de/phpunit-5.0.9.phar">
+            <signature type="gpg"/>
+            <hash type="sha-256" value="26a2af3cf438f4436bf82f6c577207a26473fa400cca97621a5aa354e5c92b89"/>
+        </release>
         <release version="4.8.9" url="https://phar.phpunit.de/phpunit-4.8.9.phar">
             <signature type="gpg"/>
             <hash type="sha-1" value="675c01c852a5894c62361953a9f096701e846da8"/>
-        </release>
-        <release version="4.8.8" url="https://phar.phpunit.de/phpunit-4.8.8.phar">
-            <signature type="gpg"/>
-            <hash type="sha-1" value="53ec2cb856d75f3b75a677a5c68a8b056f2ee809"/>
-        </release>
-        <release version="4.8.7" url="https://phar.phpunit.de/phpunit-4.8.7.phar">
-            <signature type="gpg"/>
-            <hash type="sha-1" value="96c2092218c8eda5412a70c6346ec3ed0d15ecfa"/>
-        </release>
-        <release version="4.8.6" url="https://phar.phpunit.de/phpunit-4.8.6.phar">
-            <signature type="gpg"/>
-            <hash type="sha-1" value="e07700281a2d2188de04775c537b6a1ee0f13456" />
-        </release>
-        <release version="4.8.5" url="https://phar.phpunit.de/phpunit-4.8.5.phar">
-            <signature type="gpg" url="https://phar.phpunit.de/phpunit-4.8.5.phar.asc"/>
-            <hash type="sha-1" value="2fff85b87a30de8747f80a68563cd71f794fd4d2" />
         </release>
     </phar>
 
