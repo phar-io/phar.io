@@ -5,16 +5,16 @@
         <repository url="https://phar.io/data/phpab.phive.xml"/>
     </phar>
     <phar alias="phpcpd">
-        <repository url="https://phar.io/data/phpunit.phive.xml"/>
+        <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
     <phar alias="phpdox">
         <repository url="https://phar.io/data/phpdox.phive.xml"/>
     </phar>
     <phar alias="phploc">
-        <repository url="https://phar.io/data/phpunit.phive.xml"/>
+        <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
     <phar alias="phpunit">
-        <repository url="https://phar.io/data/phpunit.phive.xml"/>
+        <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
 
 </repositories>
