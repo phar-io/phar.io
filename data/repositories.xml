@@ -16,5 +16,8 @@
     <phar alias="phpunit">
         <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
+    <phar alias="phpbu">
+        <repository url="http://phar.phpbu.de/phive.xml"/>
+    </phar>
 
 </repositories>
