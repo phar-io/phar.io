@@ -157,25 +157,54 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
                             explicitly request a copy of the phar to be made in favor of symbolic links (use --copy).</p>
                     </div>
                 </div>
-                <p class="inside">PHAR.IO only serves as a central database to resolve alias names but does not provide the
+                <p class="inside">PHAR.IO only provides a central database file to resolve alias names but does not provide the
                     actual phar files. <br>
                     If you want to be independent of PHAR.IO, simply use the fully qualified url to any PHIVE compatible
                     repository server.</p>
             </div>
         </div>
-        <!--
+
         <div class="ym-wrapper zitatcnt mittelgrau">
             <div class="ym-wbox">
-                <h3>PHIVE repository</h3>
+                <h3>Distributing PHARs</h3>
             </div>
         </div>
         <div class="ym-wrapper alternatecolor1 layoutcnt2">
             <div class="ym-wbox">
-                <p>To make your phar based project available to PHIVE users, you need to provide a download location either by
-                    following some simple conventions or soon by generating a metadata file.</p>
+                <p>While you can always provide the fully qualified URL to a phar for installation, having a memorable
+                    alias is of course more convinient. To make your phar based project available to PHIVE users, you
+                    need to register an alias for it with phar.io and provide a download repository. To register your
+                    alias please provide a PULL Request against the <a href="#">phar.io database file</a>.
+                </p>
+                <p>For the download repository you currently can choose between two supported repository types:</p>
+
+                <div class="ym-grid">
+                    <div class="ym-g50 ym-gl ym-gbox-left">
+                        <h4>Github releases</h4>
+                        <p>
+                            To distribute phars via Github in a PHIVE compliant way, it needs to be made available as
+                            an attachment to a release - alongside with a valid gpg signature. For PHIVE to pick it up,
+                            the filenames need to end on ".phar" and ".phar.asc" respectively.
+                        </p>
+                        <p>
+                            PHIVE supports github's releases feature for repositories as of version 0.3.0.
+                        <p>
+
+                    </div>
+                    <div class="ym-g50 ym-gr ym-gbox right">
+                        <h4>Phar.io</h4>
+                        <p>
+                            If you do not want to rely on github releases for distribution, you can also run your own
+                            repository server. For this to work, merely a TLS enabled webserver and an xml file providing the
+                            necessary meta data is required. You can find an example for such a file <a href="#">here</a>
+                            (<a href="#">XSD</a>). It is recommended to have this file auto-generated, for instance by using
+                            the <a href="#">Phar-site-generator</a> by Sebastian Bergmann. <b>Please be aware that only
+                            secure downloads via HTTPS are supported by PHIVE.</b>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-        -->
         <div class="ym-wrapper layoutcnt2 blau centered">
             <div class="ym-wbox">
                 <h3>Contributing</h3>
@@ -189,7 +218,7 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
         </div>
 
         <div class="ym-wrapper mittelgrau centered" id="footer">
-            <div class="ym-wbox">Copyright &copy; 2015 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The Phar.io Development team</a></div>
+            <div class="ym-wbox">Copyright &copy; 2015-2016 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The Phar.io Development team</a></div>
             <a class="oben" href="#top">top</a>
         </div>
     </body>
