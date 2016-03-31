@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories xmlns="https://phar.io/repository-list">
 
-    <phar alias="phpab">
+    <phar alias="phpab" composer="theseer/autoload">
         <repository url="https://phar.io/data/phpab.phive.xml"/>
     </phar>
-    <phar alias="phpcpd">
+    <phar alias="phpcpd" composer="sebastian/phpcpd">
         <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
-    <phar alias="phpdox">
+    <phar alias="phpdox" composer="theseer/phpdox">
         <repository url="https://phar.io/data/phpdox.phive.xml"/>
     </phar>
-    <phar alias="phploc">
+    <phar alias="phploc" composer="phploc/phploc">
         <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
-    <phar alias="phpunit">
+    <phar alias="phpunit" composer="phpunit/phpunit">
         <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
-    <phar alias="phpbu">
+    <phar alias="phpbu" composer="phpbu/phpbu">
         <repository url="https://phar.phpbu.de/phive.xml"/>
     </phar>
 
