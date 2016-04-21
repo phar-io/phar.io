@@ -92,9 +92,11 @@ sudo mv phive.phar /usr/bin/phive</code></pre>
             <div class="ym-wbox">
                 <p class="big">Once installed, PHIVE is ready for action. Some example invocations are shown below:</p>
             <pre><code>phive install phpunit
+phive install theseer/Autoload
 phive install --copy phpdox
-phive install phpdox bin/phpdox
-phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
+phive install --target bin/phpdox phpdox
+phive install https://phar.phpunit.de/phpunit-4.8.6.phar
+</code></pre>
                 <div class="centered error">
                     <p class="big">PHIVE is currently in alpha testing and still under heavy development.<br/>Please bear with us and report any <a style="color: #000;" href="https://github.com/phar-io/phive/issues">issues</a> you find!</p>
                 </div>
@@ -149,7 +151,7 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
                     <div class="ym-g50 ym-gl ym-gbox-left">
                         <p>PHIVE makes installation easy by providing a means to resolve the given alias to an actual download
                             location, including the verification of the certificate supplied by the server. Once downloaded, the
-                            archive’s SHA1/SHA256/SHA512 hash is verified and so its OpenPGP/GnuPG or OpenSSL signature.</p>
+                            archive’s SHA1, SHA256 or SHA512 hash is verified and so its OpenPGP/GnuPG or OpenSSL signature.</p>
                     </div>
                     <div class="ym-g50 ym-gr ym-gbox right">
                         <p>Instead of redownloading the same phar multiple times, the archive is kept at a shared location (by
@@ -157,10 +159,16 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar</code></pre>
                             explicitly request a copy of the phar to be made in favor of symbolic links (use --copy).</p>
                     </div>
                 </div>
-                <p class="inside">PHAR.IO only provides a central database file to resolve alias names but does not provide the
-                    actual phar files. <br>
-                    If you want to be independent of PHAR.IO, simply use the fully qualified url to any PHIVE compatible
-                    repository server.</p>
+                <p class="inside">
+                    Currently PHIVE supports three different methods to find the requested phar release:
+                    <ul>
+                        <li>Github based releases (<i>phive install username/projectname</i>)</li>
+                        <li>PHAR.IO registered alias (<i>phive install alias</i>)</li>
+                        <li>Dedicated URL (<i>phive install https://server/file-1.0.0.phar</i>)</li>
+                    </ul>
+                    For PHAR.IO registered aliases a central database file is downloaded to resolve alias names.<br>
+                    No actual hosting of phar files is done at phar.io, so no other runtime dependency to phar.io exists.
+                </p>
             </div>
         </div>
 
