@@ -33,7 +33,7 @@
                     <div class="ym-g50 ym-gl ym-gbox-left">
                         <p>Adding all the required tools like PHPUnit, PHPMD and phpDox in their matching versions to a project
                             used to be a lot of repetitive work: Started by finding the download URL, figuring out what the
-                            actually correct and matching version is followed by verifying the sha1 and gpg signatures and
+                            actually correct and matching version is followed by verifying the SHA1 and GPG signatures and
                             making the archive executable. And of course you’d have to repeat this very thing for every tool
                             needed.</p>
                     </div>
@@ -154,7 +154,7 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar
                             archive’s SHA1, SHA256 or SHA512 hash is verified and so its OpenPGP/GnuPG or OpenSSL signature.</p>
                     </div>
                     <div class="ym-g50 ym-gr ym-gbox right">
-                        <p>Instead of redownloading the same phar multiple times, the archive is kept at a shared location (by
+                        <p>Instead of re-downloading the same phar multiple times, the archive is kept at a shared location (by
                             default in ~/.phive) and only a symbolic link is created for the project. You can of course also
                             explicitly request a copy of the phar to be made in favor of symbolic links (use --copy).</p>
                     </div>
@@ -180,9 +180,9 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar
         <div class="ym-wrapper alternatecolor1 layoutcnt2">
             <div class="ym-wbox">
                 <p>While you can always provide the fully qualified URL to a phar for installation, having a memorable
-                    alias is of course more convinient. To make your phar based project available to PHIVE users, you
-                    can either use your github project identifier (username/projectname) or need to register an alias for
-                    it with phar.io. Downloads can be made available using github releases or you can choose to
+                    alias is of course more convenient. To make your phar based project available to PHIVE users, you
+                    can either use your Github project identifier (username/projectname) or need to register an alias for
+                    it with phar.io. Downloads can be made available using Github releases or you can choose to
                     provide your own download repository.
                 </p>
                 <p>
@@ -199,14 +199,14 @@ phive install https://phar.phpunit.de/phpunit-4.8.6.phar
                             the filenames need to end on ".phar" and ".phar.asc" respectively.
                         </p>
                         <p>
-                            PHIVE supports github's releases feature for repositories as of version 0.3.0.
+                            PHIVE supports Github's releases feature for repositories as of version 0.3.0.
                         <p>
 
                     </div>
                     <div class="ym-g50 ym-gr ym-gbox right">
                         <h4>Phar.io</h4>
                         <p>
-                            If you do not want to rely on github releases for distribution, you can also run your own
+                            If you do not want to rely on Github releases for distribution, you can also run your own
                             repository server. For this to work, merely a TLS enabled webserver and an xml file
                             providing the necessary meta data is required. You can find an example for such a file <a
                                 href="https://github.com/phar-io/phar.io/blob/master/data/phpab.phive.xml">here</a> (<a
