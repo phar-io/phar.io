@@ -1,0 +1,137 @@
+<!doctype html>
+<!--[if IE 8]>
+<html class="ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>PHAR.IO</title>
+	<meta name="description" content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all and (min-width:0px)">
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="../css/oldie.css">
+	<![endif]-->
+</head>
+
+<body>
+<ul class="ym-skiplinks" id="top">
+	<li><a class="ym-skip" href="#content">skip to content (Enter)</a></li>
+</ul>
+
+<h1 id="header-logo">
+	<img src="../images/phario.png" alt="Logo PHAR.IO" class="flexible">
+	<span class="ym-hideme">PHAR.IO</span>
+</h1>
+
+<div class="ym-wrapper topcnt"></div>
+
+
+<div class="ym-wrapper layoutcnt" id="content">
+	<div class="ym-wbox">
+
+		<p>&nbsp;</p>
+		<h2>How to generate your GPG key</h2>
+		<h3>Install GnuPG</h3>
+		<p>Download your appropriate OS version from the <a href="https://www.gnupg.org/download/index.html">download section</a> and follow the install
+			instructions.
+		</p>
+		<h3>Generate a new GPG key</h3>
+<pre><code class="language-bash">gpg --gen-key
+
+gpg (GnuPG) 2.0.22; Copyright (C) 2013 Free Software Foundation, Inc.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.</code></pre>
+		<h4>Choose key-pair type, default is a good choice</h4>
+<pre><code class="language-bash">Please select what kind of key you want:
+   (1) RSA and RSA (default)
+   (2) DSA and Elgamal
+   (3) DSA (sign only)
+   (4) RSA (sign only)
+Your selection? 1</code></pre>
+		<h4>Choose key size, be paranoid and use max. available</h4>
+<pre><code class="language-bash">RSA keys may be between 1024 and 4096 bits long.
+What keysize do you want? (2048) 4096
+Requested keysize is 4096 bits</code></pre>
+		<h4>Choose validity of the key, 1 year is a good choice</h4>
+<pre><code class="language-bash">Please specify how long the key should be valid.
+         0 = key does not expire
+      &lt;n&gt;  = key expires in n days
+      &lt;n&gt;w = key expires in n weeks
+      &lt;n&gt;m = key expires in n months
+      &lt;n&gt;y = key expires in n years
+Key is valid for? (0) 1y
+
+# Double check expiration according to your validity choice
+Key expires at Tue 04 Jul 2017 07:57:46 PM CEST
+Is this correct? (y/N) y</code></pre>
+		<h4>Enter user data</h4>
+<pre><code class="language-bash">GnuPG needs to construct a user ID to identify your key.
+
+Real name: John Doe
+Email address: john@doe.org
+Comment: This indeed is my key!</code></pre>
+		<h4>Confirm your data</h4>
+<pre><code class="language-bash">You selected this USER-ID:
+    "John Doe (This indeed is my key!) &lt;john@doe.org&gt;"
+
+Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O</code></pre>
+		<h4>Enter passphrase and hit <code>&lt;OK&gt;</code></h4>
+<pre><code class="language-bash">┌─────────────────────────────────────────────────────┐
+│ Enter passphrase                                    │
+│                                                     │
+│ Passphrase ***************_________________________ │
+│                                                     │
+│      &lt;OK&gt;                             &lt;Cancel&gt;      │
+└─────────────────────────────────────────────────────┘</code></pre>
+		<h4>Re-enter passphrase and hit <code>&lt;OK&gt;</code></h4>
+<pre><code class="language-bash">┌─────────────────────────────────────────────────────┐
+│ Please re-enter this passphrase                     │
+│                                                     │
+│ Passphrase ***************_________________________ │
+│                                                     │
+│       &lt;OK&gt;                             &lt;Cancel&gt;     │
+└─────────────────────────────────────────────────────┘</code></pre>
+		<h4>Key is going to be generated... (takes a while)</h4>
+<pre><code class="language-bash">We need to generate a lot of random bytes. It is a good idea to perform
+some other action (type on the keyboard, move the mouse, utilize the
+disks) during the prime generation; this gives the random number
+generator a better chance to gain enough entropy. </code></pre>
+		<h4>Ends up in something like this</h4>
+<pre><code class="language-bash">gpg: key AA6CFB50 marked as ultimately trusted
+public and secret key created and signed.
+
+gpg: checking the trustdb
+gpg: 3 marginal(s) needed, 1 complete(s) needed, PGP trust model
+gpg: depth: 0  valid:   5  signed:   0  trust: 0-, 0q, 0n, 0m, 0f, 5u
+gpg: next trustdb check due at 2017-07-04
+pub   4096R/AA6CFB50 2016-07-04 [expires: 2017-07-04]
+      Key fingerprint = 6279 69BF 8644 4D64 CA63  1F55 962C 1715 AA6C FB50
+uid       [ultimate] John Doe (This indeed is my key!) &lt;john@doe.com&gt;
+sub   4096R/109F9230 2016-07-04 [expires: 2017-07-04]</code></pre>
+
+		<h4>You're done.</h4>
+
+	</div>
+
+</div>
+
+<div class="ym-wrapper layoutcnt2 blau centered">
+	<div class="ym-wbox">
+		<h3>Contributing</h3>
+
+		<p class="big">PHIVE and PHAR.IO are open source projects released under the BSD license. You are welcome to
+			join the development team!
+		</p>
+
+		<a class="formbutton" href="https://github.com/phar-io/">Fork us!</a>
+	</div>
+</div>
+
+<div class="ym-wrapper mittelgrau centered" id="footer">
+	<div class="ym-wbox">Copyright &copy; 2015-2016 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The
+		Phar.io Development team</a></div>
+	<a class="oben" href="#top">top</a>
+</div>
+</body>
+</html>
