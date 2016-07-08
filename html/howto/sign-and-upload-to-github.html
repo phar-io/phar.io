@@ -1,0 +1,87 @@
+<!doctype html>
+<!--[if IE 8]>
+<html class="ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>PHAR.IO</title>
+	<meta name="description" content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/styles.css" type="text/css" media="all and (min-width:0px)">
+	<!--[if lte IE 8]>
+	<link rel="stylesheet" href="../css/oldie.css">
+	<![endif]-->
+</head>
+
+<body>
+<ul class="ym-skiplinks" id="top">
+	<li><a class="ym-skip" href="#content">skip to content (Enter)</a></li>
+</ul>
+
+<h1 id="header-logo">
+	<img src="../images/phario.png" alt="Logo PHAR.IO" class="flexible">
+	<span class="ym-hideme">PHAR.IO</span>
+</h1>
+
+<div class="ym-wrapper topcnt"></div>
+
+<div class="ym-wrapper layoutcnt" id="content">
+	<div class="ym-wbox">
+		<h2 class="centered">How to make a PHAR release on GitHub PHIVE-compatible</h2>
+	</div>
+</div>
+<div class="ym-wrapper layoutcnt2 blau">
+	<div class="ym-wbox">
+		<h3 class="centered">Prerequisites</h3>
+		<ul>
+			<li>You need a personal or company GPG key. If you don't have one, <a href="./generate-gpg-key.html">this explains how to generate a GPG key</a>.
+			</li>
+			<li>You already created a PHAR file.</li>
+		</ul>
+	</div>
+</div>
+<div class="ym-wrapper layoutcnt2 alternatecolor1">
+	<div class="ym-wbox">
+		<h3 class="centered">Create a signature</h3>
+		<pre><code class="language-bash">gpg -u john@doe.com --detach-sign --output your.phar.asc your.phar</code></pre>
+		<p><strong>About the options:</strong></p>
+		<ul>
+			<li><strong>-u</strong> (optional) Provide a search term for the USER-ID you intend to use, if you have more than one.</li>
+			<li><strong>--detach-sign</strong> Create a detached signature (do not wrap the original file).</li>
+			<li><strong>--output</strong> Specify the filename of the signature (PHIVE currently searches for <code>your.phar.asc</code>).</li>
+		</ul>
+		<p>Last argument is the PHAR you want to sign.</p>
+	</div>
+</div>
+<div class="ym-wrapper layoutcnt">
+	<div class="ym-wbox">
+		<h3 class="centered">Upload in GitHub's release section</h3>
+		<ul>
+			<li>Go to <code>https://github.com/&lt;your-vendor&gt;/&lt;your-project&gt;/releases</code></li>
+			<li>Klick &quot;Edit&quot; on your latest tag/release</li>
+			<li>Add <code>your.phar</code> and <code>your.phar.asc</code> in the &quot;Attach binaries...&quot; section</li>
+			<li>Klick &quot;Update release&quot;</li>
+		</ul>
+	</div>
+</div>
+
+<div class="ym-wrapper layoutcnt2 blau centered">
+	<div class="ym-wbox">
+		<h3>Contributing</h3>
+
+		<p class="big">PHIVE and PHAR.IO are open source projects released under the BSD license. You are welcome to
+			join the development team!
+		</p>
+
+		<a class="formbutton" href="https://github.com/phar-io/">Fork us!</a>
+	</div>
+</div>
+
+<div class="ym-wrapper mittelgrau centered" id="footer">
+	<div class="ym-wbox">Copyright &copy; 2015-2016 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The
+		Phar.io Development team</a></div>
+	<a class="oben" href="#top">top</a>
+</div>
+</body>
+</html>
