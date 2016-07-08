@@ -29,14 +29,21 @@
 
 <div class="ym-wrapper layoutcnt" id="content">
 	<div class="ym-wbox">
+		<h2 class="centered">How to generate your GPG key</h2>
+	</div>
+</div>
 
-		<p>&nbsp;</p>
-		<h2>How to generate your GPG key</h2>
-		<h3>Install GnuPG</h3>
+<div class="ym-wrapper layoutcnt2 blau">
+	<div class="ym-wbox">
+		<h3 class="centered">Install GnuPG</h3>
 		<p>Download your appropriate OS version from the <a href="https://www.gnupg.org/download/index.html">download section</a> and follow the install
-			instructions.
-		</p>
-		<h3>Generate a new GPG key</h3>
+			instructions.</p>
+	</div>
+</div>
+
+<div class="ym-wrapper layoutcnt2 alternatecolor1">
+	<div class="ym-wbox">
+		<h3 class="centered">Generate a new GPG key</h3>
 <pre><code class="language-bash">gpg --gen-key
 
 gpg (GnuPG) 2.0.22; Copyright (C) 2013 Free Software Foundation, Inc.
@@ -78,19 +85,19 @@ Comment: This indeed is my key!</code></pre>
 Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O</code></pre>
 		<h4>Enter passphrase and hit <code>&lt;OK&gt;</code></h4>
 <pre><code class="language-bash">┌─────────────────────────────────────────────────────┐
-│ Enter passphrase                                    │
-│                                                     │
-│ Passphrase ***************_________________________ │
-│                                                     │
-│      &lt;OK&gt;                             &lt;Cancel&gt;      │
+│ Enter passphrase                                         │
+│                                                          │
+│ Passphrase ***************_________________________      │
+│                                                          │
+│      &lt;OK&gt;                             &lt;Cancel&gt;           │
 └─────────────────────────────────────────────────────┘</code></pre>
 		<h4>Re-enter passphrase and hit <code>&lt;OK&gt;</code></h4>
 <pre><code class="language-bash">┌─────────────────────────────────────────────────────┐
-│ Please re-enter this passphrase                     │
-│                                                     │
-│ Passphrase ***************_________________________ │
-│                                                     │
-│       &lt;OK&gt;                             &lt;Cancel&gt;     │
+│ Please re-enter this passphrase                          │
+│                                                          │
+│ Passphrase ***************_________________________      │
+│                                                          │
+│       &lt;OK&gt;                             &lt;Cancel&gt;          │
 └─────────────────────────────────────────────────────┘</code></pre>
 		<h4>Key is going to be generated... (takes a while)</h4>
 <pre><code class="language-bash">We need to generate a lot of random bytes. It is a good idea to perform
