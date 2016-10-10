@@ -19,5 +19,8 @@
     <phar alias="phpbu" composer="phpbu/phpbu">
         <repository url="https://phar.phpbu.de/phive.xml"/>
     </phar>
+    <phar alias="dephpend" composer="dephpend/dephpend">
+        <repository url="https://phar.dephpend.com/phive.xml"/>
+    </phar>
 
 </repositories>
