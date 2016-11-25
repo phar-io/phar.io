@@ -2,13 +2,13 @@
 <repositories xmlns="https://phar.io/repository-list">
 
     <phar alias="phpab" composer="theseer/autoload">
-        <repository url="https://phar.io/data/phpab.phive.xml"/>
+        <repository type="github" url="https://api.github.com/repos/theseer/autoload/releases" />
     </phar>
     <phar alias="phpcpd" composer="sebastian/phpcpd">
         <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
     <phar alias="phpdox" composer="theseer/phpdox">
-        <repository url="https://phar.io/data/phpdox.phive.xml"/>
+        <repository type="github" url="https://api.github.com/repos/theseer/phpdox/releases" />
     </phar>
     <phar alias="phploc" composer="phploc/phploc">
         <repository url="https://phar.phpunit.de/phive.xml"/>
