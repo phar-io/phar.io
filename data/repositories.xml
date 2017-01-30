@@ -22,5 +22,8 @@
     <phar alias="dephpend" composer="dephpend/dephpend">
         <repository url="https://phar.dephpend.com/phive.xml"/>
     </phar>
+    <phar alias="phpdocumentor" composer="phpdocumentor/phpdocumentor">
+        <repository type="github" url="https://api.github.com/repos/phpdocumentor/phpdocumentor2/releases" />
+    </phar>
 
 </repositories>
