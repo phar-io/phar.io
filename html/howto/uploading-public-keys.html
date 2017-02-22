@@ -1,0 +1,133 @@
+<!doctype html>
+<!--[if IE 8]>
+<html class="ie8" lang="en"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <title>PHAR.IO - How to get a public key registered with a key server</title>
+    <meta name="description"
+          content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" media="all and (min-width:0px)">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="../css/oldie.css">
+    <![endif]-->
+</head>
+
+<body>
+<ul class="ym-skiplinks" id="top">
+    <li><a class="ym-skip" href="#content">skip to content (Enter)</a></li>
+</ul>
+
+<h1 id="header-logo">
+    <img src="../images/phario.png" alt="Logo PHAR.IO" class="flexible">
+    <span class="ym-hideme">PHAR.IO</span>
+</h1>
+
+<div class="ym-wrapper topcnt"></div>
+
+<div class="ym-wrapper layoutcnt" id="content">
+    <div class="ym-wbox">
+        <h2 class="centered">How to get a public key registered with a key server</h2>
+    </div>
+</div>
+<div class="ym-wrapper layoutcnt2 blau">
+    <div class="ym-wbox">
+        <h3 class="centered">Prerequisites</h3>
+        <ul>
+            <li>You need a personal or company GPG key. If you don't have one, <a href="./generate-gpg-key.html">this
+                explains how to generate a GPG key</a>.
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="ym-wrapper layoutcnt2 alternatecolor1">
+    <div class="ym-wbox">
+        <h3 class="centered">Export your public key</h3>
+        <pre><code class="language-bash">gpg --export --armor john@doe.com > john_doe.pub
+
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
+-----END PGP PUBLIC KEY BLOCK-----
+        </code></pre>
+        <p><strong>About the arguments:</strong></p>
+        <ul>
+            <li><strong>--export</strong> Export the public key information of the key belonging to john@doe.com</li>
+            <li><strong>--armor</strong> Create a base64 encoded ascii string rather than using a binary format</li>
+            <li><strong>john@doe.com</strong> The key id to export</li>
+            <li><strong>> john_doe.pub</strong> Save the output into this file</li>
+        </ul>
+    </div>
+</div>
+<div class="ym-wrapper layoutcnt">
+    <div class="ym-wbox">
+        <h3 class="centered">Submit your public key to the key servers</h3>
+        <ul>
+            <li>Go to <code><a
+                    href="https://sks-keyservers.net/i/#submit">https://sks-keyservers.net/i/#submit</a></code></li>
+            <li>Paste the content of the file "john_doe.pub" unmodified and including the ----BEGIN and ---END lines
+                into the form
+            </li>
+            <li>Click on "submit this key to the keyserver!"</li>
+        </ul>
+        <h4>Congratulations, you published your public key.</h4>
+        <p>Please allow a couple of minutes for the servers to replicate that information before starting to use the key.</p>
+
+    </div>
+</div>
+
+<div class="ym-wrapper layoutcnt2 alternatecolor1">
+    <div class="ym-wbox">
+        <div class="ym-wbox">
+            <h3 class="centered">General notes on Security</h3>
+            <ul>
+                <li>
+                    A keyserver does not make any claims about authenticity. It merely provides an automated means to
+                    get a public key based on it's ID. It's up to the user to decide whether the result is to be
+                    trusted, as in whether or not to import the pubic key to the local chain. Do not blindly import
+                    a key but at least verify its fingerprint. The <a href="#keyinfo">phar.io fingerprint information can be found in the footer</a>.
+                </li>
+                <li>
+                    Instead of using a keyserver, public keys can of course also be imported directly. Linux
+                    distributions for example do that by providing their keys in release-packages or the base OS
+                    installation image. Phive will only contact a keyserver in case the key used for signing is not
+                    already known, a.k.a can be found in the local chain.
+                </li>
+                <li>
+                    A single key is not a chain. Other people or organizations, potentially someone trusted, need to
+                    sign your key with theirs, increasing the level of trustworthiness and forming the actual
+                    chain. It's actually the same as with TLS certificates where a CA like letsencrypt signs your key
+                    and since your browser trusts letsencrypt it also trusts your key/certificate. Most projects though
+                    do not co- or cross-sign their release keys.
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="ym-wrapper layoutcnt2 blau centered">
+    <div class="ym-wbox">
+        <h3>Contributing</h3>
+
+        <p class="big">PHIVE and PHAR.IO are open source projects released under the BSD license. You are welcome to
+            join the development team!
+        </p>
+
+        <a class="formbutton" href="https://github.com/phar-io/">Fork us!</a>
+    </div>
+</div>
+
+<div class="ym-wrapper mittelgrau centered" id="footer">
+    <div class="ym-wbox">Copyright &copy; 2015-2017 - <a class="link"
+                                                         href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The
+        Phar.io Development team</a>
+    </div>
+    <span id="keyinfo">
+        <b>GPG Public key information</b>: <b>Id</b> 9B2D5D79 - <b>Fingerprint</b> 6AF7 2527 0AB8 1E04 D794  4254 9D8A 98B2 9B2D 5D79
+    </span>
+    <a class="oben" href="#top">top</a>
+</div>
+</body>
+</html>

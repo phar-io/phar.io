@@ -692,9 +692,9 @@ body {
     }
 
     textarea, pre, code, kbd, samp, var, tt {
-        font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier;
+        font-family: Consolas, "Lucida Console", "Andale Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
         text-align: left;
-        line-height: 2.2;
+        /*line-height: 2.2;*/
         font-weight: bold;
         font-size: 1rem;
         background-color: #fff;
@@ -1504,4 +1504,11 @@ body {
     }
 
     /*------------------------------------------------------------------------------------------------------*/
+}
+
+.framebox {
+    border:2px solid black;
+    width:35rem;
+    padding:1em;
+    display:block;
 }
