@@ -28,5 +28,7 @@
     <phar alias="carbon" composer="jpuck/carbon-console">
         <repository type="github" url="https://api.github.com/repos/jpuck/carbon-console/releases" />
     </phar>
-
+    <phar alias="phing" composer="phing/phing">
+        <repository type="github" url="https://api.github.com/repos/phingofficial/phing/releases" />
+    </phar>
 </repositories>
