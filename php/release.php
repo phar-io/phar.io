@@ -4,6 +4,7 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://api.github.com/repos/phar-io/phive/releases');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_USERAGENT, 'phive release redirector');
+curl_setopt($ch, CURLOPT_HTTPHEADER, [ sprintf('Authorization: token %s', $_SERVER['GITHUB_API_TOKEN']) ]);
 
 $releasesRAW = curl_exec($ch);
 curl_close($ch);
