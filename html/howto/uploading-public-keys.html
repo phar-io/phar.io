@@ -45,7 +45,7 @@
 <div class="ym-wrapper layoutcnt2 alternatecolor1">
     <div class="ym-wbox">
         <h3 class="centered">Export your public key</h3>
-        <pre><code class="language-bash">gpg --export --armor john@doe.com > john_doe.pub
+        <pre><code class="language-bash">gpg --export --armor john@example.com > john_doe.pub
 
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
@@ -53,9 +53,9 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
         </code></pre>
         <p><strong>About the arguments:</strong></p>
         <ul>
-            <li><strong>--export</strong> Export the public key information of the key belonging to john@doe.com</li>
+            <li><strong>--export</strong> Export the public key information of the key belonging to john@example.com</li>
             <li><strong>--armor</strong> Create a base64 encoded ascii string rather than using a binary format</li>
-            <li><strong>john@doe.com</strong> The key id to export</li>
+            <li><strong>john@example.com</strong> The key id to export</li>
             <li><strong>> john_doe.pub</strong> Save the output into this file</li>
         </ul>
     </div>
