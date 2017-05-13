@@ -28,5 +28,8 @@
     <phar alias="carbon" composer="jpuck/carbon-console">
         <repository type="github" url="https://api.github.com/repos/jpuck/carbon-console/releases" />
     </phar>
+    <phar alias="composer-require-checker" composer="maglnet/composer-require-checker">
+        <repository type="github" url="https://api.github.com/repos/maglnet/ComposerRequireChecker/releases" />
+    </phar>
 
 </repositories>
