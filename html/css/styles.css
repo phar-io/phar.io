@@ -622,7 +622,11 @@ body {
 
 .list {
     margin-top: 1rem;
-    padding: 0 18rem;
+    padding: 0 10rem;
+}
+
+.list h4 {
+    text-align: center;
 }
 
 .pfeilkasten {
