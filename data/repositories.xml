@@ -34,5 +34,8 @@
     <phar alias="phpstan" composer="phpstan/phpstan">
         <repository type="github" url="https://api.github.com/repos/phpstan/phpstan/releases" />
     </phar>
-
+    <phar alias="phpcs" composer="squizlabs/php_codesniffer">
+        <repository type="github" url="https://api.github.com/repos/squizlabs/php_codesniffer/releases" />
+    </phar>
+    
 </repositories>
