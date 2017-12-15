@@ -35,7 +35,10 @@
         <repository type="github" url="https://api.github.com/repos/phpstan/phpstan/releases" />
     </phar>
     <phar alias="phpcs" composer="squizlabs/php_codesniffer">
-        <repository type="github" url="https://api.github.com/repos/squizlabs/php_codesniffer/releases" />
+        <repository url="https://squizlabs.github.io/PHP_CodeSniffer/phars/phive.xml" />
     </phar>
-    
+    <phar alias="phpcbf" composer="squizlabs/php_codesniffer">
+        <repository url="https://squizlabs.github.io/PHP_CodeSniffer/phars/phive.xml" />
+    </phar>
+
 </repositories>
