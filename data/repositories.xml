@@ -25,6 +25,9 @@
     <phar alias="phpdocumentor" composer="phpdocumentor/phpdocumentor">
         <repository type="github" url="https://api.github.com/repos/phpdocumentor/phpdocumentor2/releases" />
     </phar>
+    <phar alias="ocular" composer="scrutinizer/ocular">
+        <repository type="github" url="https://github.com/scrutinizer-ci/ocular/releases" />
+    </phar>
     <phar alias="carbon" composer="jpuck/carbon-console">
         <repository type="github" url="https://api.github.com/repos/jpuck/carbon-console/releases" />
     </phar>
