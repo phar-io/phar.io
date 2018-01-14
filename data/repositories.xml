@@ -28,6 +28,9 @@
     <phar alias="ocular" composer="scrutinizer/ocular">
         <repository type="github" url="https://github.com/scrutinizer-ci/ocular/releases" />
     </phar>
+    <phar alias="coveralls" composer="php-coveralls/php-coveralls">
+        <repository type="github" url="https://github.com/php-coveralls/php-coveralls/releases" />
+    </phar>
     <phar alias="carbon" composer="jpuck/carbon-console">
         <repository type="github" url="https://api.github.com/repos/jpuck/carbon-console/releases" />
     </phar>
