@@ -49,4 +49,7 @@
     <phar alias="pipelines" composer="ktomk/pipelines">
         <repository type="github" url="https://api.github.com/repos/ktomk/pipelines/releases" />
     </phar>
+    <phar alias="phing" composer="phing/phing">
+        <repository type="github" url="https://api.github.com/repos/phingofficial/phing/releases" />
+    </phar>
 </repositories>
