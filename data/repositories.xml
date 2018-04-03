@@ -52,4 +52,7 @@
     <phar alias="phing" composer="phing/phing">
         <repository type="github" url="https://api.github.com/repos/phingofficial/phing/releases" />
     </phar>
+    <phar alias="psalm" composer="vimeo/psalm">
+        <repository type="github" url="https://api.github.com/repos/vimeo/psalm/releases" />
+    </phar>
 </repositories>
