@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories xmlns="https://phar.io/repository-list">
 
+    <phar alias="peridot" composer="peridot-php/peridot">
+        <repository type="github" url="https://api.github.com/repos/peridot-php/peridot/releases" />
+    </phar>
     <phar alias="phpab" composer="theseer/autoload">
         <repository type="github" url="https://api.github.com/repos/theseer/autoload/releases" />
     </phar>
