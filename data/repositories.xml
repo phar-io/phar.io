@@ -7,6 +7,9 @@
     <phar alias="phpcpd" composer="sebastian/phpcpd">
         <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
+    <phar alias="php-cs-fixer" composer="friendsofphp/php-cs-fixer">
+        <repository type="github" url="https://api.github.com/repos/friendsofphp/php-cs-fixer/releases" />
+    </phar>
     <phar alias="phpdox" composer="theseer/phpdox">
         <repository type="github" url="https://api.github.com/repos/theseer/phpdox/releases" />
     </phar>
