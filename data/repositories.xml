@@ -55,4 +55,7 @@
     <phar alias="psalm" composer="vimeo/psalm">
         <repository type="github" url="https://api.github.com/repos/vimeo/psalm/releases" />
     </phar>
+    <phar alias="clapi" composer="ngabor84/clapi">
+        <repository type="github" url="https://api.github.com/repos/ngabor84/clapi/releases" />
+    </phar>
 </repositories>
