@@ -58,4 +58,7 @@
     <phar alias="clapi" composer="ngabor84/clapi">
         <repository type="github" url="https://api.github.com/repos/ngabor84/clapi/releases" />
     </phar>
+    <phar alias="sshman" composer="mwender/sshman">
+        <repository type="github" url="https://api.github.com/repos/mwender/sshman/releases" />
+    </phar>    
 </repositories>
