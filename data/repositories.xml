@@ -63,4 +63,7 @@
     <phar alias="php-coveralls" composer="php-coveralls/php-coveralls">
         <repository type="github" url="https://api.github.com/repos/php-coveralls/php-coveralls/releases" />
     </phar>
+    <phar alias="php-cs-fixer" composer="friendsofphp/php-cs-fixer">
+        <repository type="github" url="https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/releases" />
+    </phar>
 </repositories>
