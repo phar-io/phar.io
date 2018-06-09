@@ -66,4 +66,7 @@
     <phar alias="php-cs-fixer" composer="friendsofphp/php-cs-fixer">
         <repository type="github" url="https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/releases" />
     </phar>
+    <phar alias="phan" composer="phan/phan">
+        <repository type="github" url="https://api.github.com/repos/phan/phan/releases" />
+    </phar>
 </repositories>
