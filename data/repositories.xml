@@ -69,4 +69,7 @@
     <phar alias="phan" composer="phan/phan">
         <repository type="github" url="https://api.github.com/repos/phan/phan/releases" />
     </phar>
+    <phar alias="ecc" composer="ngabor84/ecc">
+        <repository type="github" url="https://api.github.com/repos/ngabor84/ecc/releases" />
+    </phar>
 </repositories>
