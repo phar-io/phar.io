@@ -40,16 +40,6 @@
         padding: 0;
     }
 
-    /* (en) Correction: margin/padding reset caused too small select boxes. */
-    /* (de) Korrektur: Das Zurücksetzen der Abstände verursacht zu kleine Selectboxen. */
-    option {
-        padding-left: 0.4em;
-    }
-
-    select {
-        padding: 1px;
-    }
-
     /*
     * (en) Global fix of the Italics bugs in IE 5.x and IE 6
     * (de) Globale Korrektur des Italics Bugs des IE 5.x und IE 6
@@ -423,71 +413,6 @@
     }
 }
 
-@media print {
-    /**
-    * @section print adjustments for core modules
-    *
-    * (en) float containment for grids. Uses display:table to avoid bugs in FF & IE
-    * (de) Floats in Grids einschließen. Verwendet display:table, um Darstellungsprobleme im FF & IE zu vermeiden
-    *
-    * @bugfix
-    * @since     3.0
-    * @affected  FF2.0, FF3.0, IE7
-    * @css-for   all browsers
-    * @valid     yes
-    */
-    .ym-grid > .ym-gl,
-    .ym-grid > .ym-gr {
-        overflow: visible;
-        display: table;
-        table-layout: fixed;
-    }
-
-    /* (en) make .ym-print class visible */
-    /* (de) .ym-print-Klasse sichtbar schalten */
-    .ym-print {
-        position: static;
-        left: 0;
-    }
-
-    /* (en) generic class to hide elements for print */
-    /* (de) Allgemeine CSS Klasse, um beliebige Elemente in der Druckausgabe auszublenden */
-    .ym-noprint {
-        display: none !important;
-    }
-}
-
-@media print {
-    /**
-    * @section basic layout preparation
-    */
-    /* (en) change font size unit to [pt] - avoids problems with [px] in Gecko based browsers */
-    /* (de) Wechsel der der Schriftgrößen-Maßheinheit zu [pt] - Probleme mit [px] in Gecko-Browsern vermeiden */
-    body {
-        font-size: 10pt;
-        padding: 0 5px;
-    }
-
-    /* (en) Hide unneeded container of the screenlayout in print layout */
-    /* (de) Für den Druck nicht benötigte Container des Layouts abschalten */
-    nav,
-    .ym-searchform {
-        display: none;
-    }
-
-    /*------------------------------------------------------------------------------------------------------*/
-    /* (en) Avoid page breaks right after headings */
-    /* (de) Vermeidung von Seitenumbrüchen direkt nach einer Überschrift */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        page-break-after: avoid;
-    }
-}
-
 /*  box sizing */
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -514,18 +439,12 @@ body {
     padding: 2rem 0 1.5rem 0rem;
 }
 
-.bgfraes {
-    padding-bottom: 5rem;
-    background: url(fraes-bg.png) no-repeat center bottom;
-    border: 1rem solid #e6e6e6;
-}
-
 .topcnt, .secondtopcnt {
     font-size: 1rem;
 }
 
 .topcnt {
-    padding: 4.0625rem 0rem;
+    padding: 0 0 4rem 0;
     color: #0b4494;
     font-size: 1rem;
     border-bottom: 3px solid #697CB6;
@@ -547,9 +466,6 @@ body {
     }
 }
 
-.zitatcnt {
-    padding: 1rem 0rem 0.75rem 0;
-}
 
 .ym-wbox {
     max-width: 1280px;
@@ -646,7 +562,7 @@ body {
     -moz-border-left-colors: none;
     border-image: none;
     position: absolute;
-    bottom: -70px;
+    bottom: -55px;
     left: 50%;
     margin-left: -25px;
     z-index: 20;
@@ -755,6 +671,7 @@ body {
         font-size: 2.25rem;
         margin-bottom: 1rem;
         font-family: "rajdhanimedium", Arial, Helvetica, sans-serif;
+        padding: 0.25rem 0;
     }
 
     .mittelgrau h2 {
@@ -767,8 +684,8 @@ body {
     }
 
     h2.centered {
-        margin-top: 2.125rem;
-        margin-bottom: 1.5rem;
+        margin-top: 0.125rem;
+        margin-bottom: 0.5rem;
     }
 
     .blau h2.centered {
@@ -1010,6 +927,7 @@ body {
     }
 
     .error {
+        padding: 0.25rem;
         background: #c88;
     }
 
@@ -1176,10 +1094,11 @@ body {
 
 #header-logo {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 50%;
     z-index: 20;
-    margin-left: -111px;
+    width:6rem;
+    margin-left: -3rem;
     padding-top: 1.5rem;
 }
 
@@ -1516,3 +1435,34 @@ body {
     padding:1em;
     display:block;
 }
+
+
+section {
+    padding-top:2rem;
+}
+
+
+img.phive {
+    padding:0;
+    margin:0;
+    max-height:5rem;
+}
+
+
+div.phive {
+    max-height:10rem;
+}
+
+nav {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0 1rem;
+}
+
