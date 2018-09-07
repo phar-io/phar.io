@@ -1,35 +1,26 @@
 <!doctype html>
-<!--[if IE 8]><html class="ie8" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <title>PHAR.IO</title>
         <meta name="description" content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css" type="text/css" media="all and (min-width:0px)">
-        <!--[if lte IE 8]>
-        <link rel="stylesheet" href="css/oldie.css">
-        <![endif]-->
     </head>
 
     <body>
-        <ul class="ym-skiplinks" id="top">
-            <li><a class="ym-skip" href="#content">skip to content (Enter)</a></li>
-        </ul>
-
-        <h1 id="header-logo">
-            <img src="images/phario.png" alt="Logo PHAR.IO" class="flexible">
-            <span class="ym-hideme">PHAR.IO</span>
-        </h1>
+        <header id="header-logo">
+            <a href="/"><img src="images/phario.png" alt="Logo PHAR.IO" class="flexible"></a>
+        </header>
 
         <div class="ym-wrapper topcnt"></div>
 
-
         <div class="ym-wrapper layoutcnt" id="content">
             <div class="ym-wbox">
-                <h2 class="centered">Welcome to PHAR.IO</h2>
+                <h3 class="centered">The PHAR Installation and Verification Environment (PHIVE)</h3>
+                <h4 class="centered">Installation and verification of <a class="link" href="http://php.net/phar">phar</a> distributed PHP applications has never been this easy!</h4>
 
-                <div class="ym-grid">
+                <section class="ym-grid">
                     <div class="ym-g50 ym-gl ym-gbox-left">
                         <p>Adding all the required tools like PHPUnit, PHPMD and phpDox in their matching versions to a project
                             used to be a lot of repetitive work: Started by finding the download URL, figuring out what the
@@ -44,31 +35,25 @@
                         <p>No more! Now you can rely on PHIVE to install and manage your project’s tooling needs without all the
                             hassle and without cluttered dependencies!</p>
                     </div>
-                </div>
+                </section>
 
             </div>
         </div>
 
-        <div class="ym-wrapper zitatcnt phive">
-            <div class="ym-wbox">
-                <h1>
-                    <img src="images/phive.png" alt="Logo PHIVE" class="flexible">
-                    <span class="ym-hideme">PHIVE</span>
-                </h1>
-            </div>
+        <nav class="ym-wrapper zitatcnt mittelgrau">
+            <a href="#Install">Installation</a> &middot;
+            <a href="#Usage">Usage</a> &middot;
+            <a href="#Tools">Supported Tools</a> &middot;
+            <a href="/how-it-works.html">How it works</a> &middot;
+            <a href="/distribute-your-own.html">Distribute your own</a>
+        </nav>
+
+        <div class="zitatcnt phive">
+            <img src="images/phive.png" alt="Logo PHIVE" class="flexible phive">
         </div>
 
-        <div class="ym-wrapper zitatcnt mittelgrau">
-            <div class="ym-wbox">
-                <h3 class="opensans">The PHAR Installation and Verification Environment (PHIVE)</h3>
-                <h4>Installation and verification of <a class="link" href="http://php.net/phar">phar</a> distributed PHP applications has never been this easy!</h4>
-            </div>
-        </div>
-
-        <div class="ym-wrapper pfeilkasten" id="gettingPhive">
-            <div class="ym-wbox">
-                <h2 class="centered grau">Getting PHIVE</h2>
-            </div>
+        <div class="pfeilkasten" id="Install">
+            <h2 class="centered grau">Installation</h2>
         </div>
         <div class="ym-wrapper layoutcnt2 centered blau">
             <div class="ym-wbox">
@@ -77,16 +62,14 @@
                 <p class="big">Grab your copy of PHIVE from the <a href="https://github.com/phar-io/phive/releases">releases section</a> or run these simple steps in a terminal:</p>
                 <pre><code>wget -O phive.phar https://phar.io/releases/phive.phar
 wget -O phive.phar.asc https://phar.io/releases/phive.phar.asc
-gpg --keyserver hkps.pool.sks-keyservers.net --recv-keys 0x9D8A98B29B2D5D79
+gpg --keyserver pool.sks-keyservers.net --recv-keys 0x9D8A98B29B2D5D79
 gpg --verify phive.phar.asc phive.phar
 chmod +x phive.phar
-sudo mv phive.phar /usr/bin/phive</code></pre>
+sudo mv phive.phar /usr/local/bin/phive</code></pre>
             </div>
         </div>
         <div class="ym-wrapper zitatcnt dark">
-            <div class="ym-wbox">
-                <h3>Sample Usages</h3>
-            </div>
+            <h3 id="Usage">Usage</h3>
         </div>
         <div class="ym-wrapper alternatecolor1 layoutcnt2 centered">
             <div class="ym-wbox">
@@ -98,141 +81,72 @@ phive install --target ./build/tools phpdox
 phive install https://phar.phpunit.de/phpunit-4.8.6.phar
 </code></pre>
                 <div class="centered error">
-                    <p class="big">PHIVE is currently in alpha testing and still under heavy development.<br/>Please bear with us and report any <a style="color: #000;" href="https://github.com/phar-io/phive/issues">issues</a> you find!</p>
+                    <span class="big">PHIVE is still under heavy development. Please report any <a style="color: #000;" href="https://github.com/phar-io/phive/issues">issues</a> you find!</span>
                 </div>
             </div>
 
-        </div>
-
-        <div class="ym-wrapper layoutcnt" id="howItWorks">
-            <div class="ym-wbox">
-                <h3 class="centered">How it works</h3>
-
-                <div class="ym-grid">
-                    <div class="ym-g50 ym-gl ym-gbox-left">
-                        <p>PHIVE makes installation easy by providing a means to resolve the given alias to an actual download
-                            location, including the verification of the certificate supplied by the server. Once downloaded, the
-                            archive’s SHA1, SHA256 or SHA512 hash is verified as well as its OpenPGP/GnuPG or OpenSSL signature.</p>
-                    </div>
-                    <div class="ym-g50 ym-gr ym-gbox right">
-                        <p>Instead of re-downloading the same phar multiple times, the archive is kept at a shared location (by
-                            default in ~/.phive) and only a symbolic link is created for the project. You can of course also
-                            explicitly request a copy of the phar to be made in favor of symbolic links (use --copy).</p>
-                    </div>
-                </div>
-                <p class="inside">
-                    Currently PHIVE supports three different methods to find the requested phar release:
-                    <ul>
-                        <li>Github based releases (<i>phive install username/projectname</i>)</li>
-                        <li>PHAR.IO registered alias (<i>phive install alias</i>)</li>
-                        <li>Dedicated URL (<i>phive install https://server/file-1.0.0.phar</i>)</li>
-                    </ul>
-                    For PHAR.IO registered aliases a central database file is downloaded to resolve alias names.<br>
-                    No actual hosting of phar files is done at phar.io, so no other runtime dependency to phar.io exists.
-                </p>
-            </div>
         </div>
 
         <div class="ym-wrapper layoutcnt2 blau">
             <div class="ym-wbox list">
-                <h3 class="centered">Currently known Projects</h3>
+                <h3 id="Tools" class="centered">Supported Tools</h3>
+
+                <p>Many famous PHP tools can already be installed via PhiVE. Among them the following well known projects:</p>
 
                 <div class="ym-grid">
                     <div class="ym-g25 ym-gl ym-gbox-left">
                         <ul>
                             <li><a href="https://phpunit.de">PHPUnit</a></li>
-                            <li><a href="https://www.phpdoc.org/">phpDocumentor</a></li>
-                            <li><a href="https://github.com/phpstan/phpstan">PHPStan</a></li>
-                        </ul>
-                    </div>
-                    <div class="ym-g25 ym-gl ym-gbox-left">
-                        <ul>
-                            <li><a href="https://www.dephpend.com/">dePHPend</a></li>
-                            <li><a href="https://phpbu.de">PHPBU</a></li>
-                            <li><a href="http://phpdox.net">phpDox</a></li>
-                        </ul>
-                    </div>
-                    <div class="ym-g25 ym-gl ym-gbox-left">
-                        <ul>
+                            <li><a href="https://github.com/squizlabs/PHP_CodeSniffer/">PHP Code Sniffer</a></li>
+                            <li><a href="https://infection.github.io/">Infection</a></li>
                             <li><a href="https://github.com/sebastianbergmann/phploc#readme">PHPLOC</a></li>
+                            <li><a href="http://php-coveralls.github.io/php-coveralls/">php-coveralls</a></li>
+                        </ul>
+                    </div>
+                    <div class="ym-g25 ym-gl ym-gbox-left">
+                        <ul>
+                            <li><a href="https://cs.sensiolabs.org">PHP CS Fixer</a></li>
+                            <li><a href="https://github.com/phpstan/phpstan">PHPStan</a></li>
+                            <li><a href="https://www.dephpend.com/">dePHPend</a></li>
                             <li><a href="https://github.com/sebastianbergmann/phpcpd#readme">phpcpd</a></li>
+                        </ul>
+                    </div>
+                    <div class="ym-g25 ym-gl ym-gbox-left">
+                        <ul>
+                            <li><a href="https://www.phpdoc.org/">phpDocumentor</a></li>
+                            <li><a href="https://github.com/phan/phan">Phan</a></li>
+                            <li><a href="http://phpdox.net">phpDox</a></li>
                             <li><a href="http://phpab.net">Autoload Builder</a></li>
                         </ul>
                     </div>
                     <div class="ym-g25 ym-gl ym-gbox-left">
                         <ul>
+                            <li><a href="https://www.phing.info/">Phing</a></li>
+                            <li><a href="https://getpsalm.org/">Psalm</a></li>
+                            <li><a href="https://phpbu.de">PHPBU</a></li>
                             <li><a href="https://github.com/maglnet/ComposerRequireChecker/">ComposerRequireChecker</a></li>
-                            <li><a href="http://php-coveralls.github.io/php-coveralls/">php-coveralls</a></li>
-                            <li><a href="https://cs.sensiolabs.org">PHP CS Fixer</a></li>
                         </ul>
                     </div>
-
+                    <p> .... and many more!</p>
                 </div>
-                <h4><a class="formbutton" href="https://github.com/phar-io/phar.io/issues/new">Let us know if we are missing any</a></h4>
+                <h4><a class="formbutton" href="https://github.com/phar-io/phar.io/issues/new">Your's missing? Let us know!</a></h4>
             </div>
         </div>
 
-        <div class="ym-wrapper zitatcnt mittelgrau" id="distributingPhars">
-            <div class="ym-wbox">
-                <h3>Distributing PHARs</h3>
-            </div>
-        </div>
-        <div class="ym-wrapper alternatecolor1 layoutcnt2">
-            <div class="ym-wbox">
-                <p>While you can always provide the fully qualified URL to a phar for installation, having a memorable
-                    alias is of course more convenient. To make your phar based project available to PHIVE users, you
-                    can either use your Github project identifier (username/projectname) or need to register an alias for
-                    it with phar.io. Downloads can be made available using Github releases or you can choose to
-                    provide your own download repository.
-                </p>
-                <p>
-                    To register your alias please provide a PULL Request against the <a href="https://github.com/phar-io/phar.io/blob/master/data/repositories.xml">phar.io database file</a>.
-                </p>
-                <p>For the download repository you currently can choose between two supported repository types:</p>
-
-                <div class="ym-grid">
-                    <div class="ym-g50 ym-gl ym-gbox-left">
-                        <h4>Github releases</h4>
-                        <p>
-                            To distribute phars via Github in a PHIVE compliant way, it needs to be made available as
-                            an attachment to a release - alongside with a valid gpg signature. For PHIVE to pick it up,
-                            the filenames need to end on ".phar" and ".phar.asc" respectively.
-                        </p>
-                        <p>
-                            PHIVE supports Github's releases feature for repositories as of version 0.3.0.
-                        <p>
-                        <p>
-                            <a href="howto/sign-and-upload-to-github.html">See the HowTo for Github releases.</a>
-                        </p>
-
-                    </div>
-                    <div class="ym-g50 ym-gr ym-gbox right">
-                        <h4>Phar.io</h4>
-                        <p>
-                            If you do not want to rely on Github releases for distribution, you can also run your own
-                            repository server. For this to work, merely a TLS enabled webserver and an xml file
-                            providing the necessary meta data is required. You can find an example for such a file <a
-                                href="https://github.com/phar-io/phar.io/blob/master/data/phpab.phive.xml">here</a> (<a
-                                href="https://github.com/phar-io/phar.io/blob/master/data/repository.xsd">XSD</a>). It
-                            is recommended to have this file auto-generated, for instance by using the <a
-                                href="https://github.com/sebastianbergmann/phar-site-generator">Phar-site-generator</a>
-                            by Sebastian Bergmann. <b>Please be aware that only secure downloads via HTTPS are supported
-                            by PHIVE.</b>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="ym-wrapper layoutcnt2 blau centered">
+        <div class="ym-wrapper layoutcnt2 centered">
             <div class="ym-wbox">
                 <h3>Contributing</h3>
-                <p class="big">PHIVE and PHAR.IO are open source projects released under the BSD license. You are welcome to join the development team!</p>
+
+                <p class="big">PHIVE and PHAR.IO are open source projects released under the BSD license. You are welcome to
+                    join the development team!
+                </p>
+
                 <a class="formbutton" href="https://github.com/phar-io/">Fork us!</a>
             </div>
         </div>
 
         <div class="ym-wrapper mittelgrau centered" id="footer">
-            <div class="ym-wbox">Copyright &copy; 2015-2017 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The Phar.io Development team</a></div>
+            <div class="ym-wbox">Copyright &copy; 2015-2018 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The Phar.io Development team</a></div>
             <span id="keyinfo"><b>GPG Public key information</b>: <b>Id</b> 9B2D5D79 - <b>Fingerprint</b> 6AF7 2527 0AB8 1E04 D794  4254 9D8A 98B2 9B2D 5D79</span>
             <a class="oben" href="#top">top</a>
         </div>

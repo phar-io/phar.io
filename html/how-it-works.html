@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PHAR.IO - How it works</title>
+        <meta name="description" content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all and (min-width:0px)">
+    </head>
+
+    <body>
+        <header id="header-logo">
+            <a href="/"><img src="/images/phario.png" alt="Logo PHAR.IO" class="flexible"></a>
+        </header>
+
+        <div class="ym-wrapper topcnt"></div>
+
+
+        <div class="ym-wrapper layoutcnt" id="howItWorks">
+            <div class="ym-wbox">
+                <h3 class="centered">How it works</h3>
+
+                <div class="ym-grid">
+                    <div class="ym-g50 ym-gl ym-gbox-left">
+                        <p>PHIVE makes installation easy by providing a means to resolve the given alias to an actual download
+                            location, including the verification of the certificate supplied by the server. Once downloaded, the
+                            archive’s SHA1, SHA256 or SHA512 hash is verified as well as its OpenPGP/GnuPG signature.</p>
+                    </div>
+                    <div class="ym-g50 ym-gr ym-gbox right">
+                        <p>Instead of re-downloading the same phar multiple times, the archive is kept at a shared location (by
+                            default in ~/.phive) and only a symbolic link is created for the project. You can of course also
+                            explicitly request a copy of the phar to be made in favor of symbolic links (use --copy).</p>
+                    </div>
+                </div>
+                <p class="inside">
+                    Currently PHIVE supports three different methods to find the requested phar release:
+                    <ul>
+                        <li>Github based releases (<i>phive install username/projectname</i>)</li>
+                        <li>PHAR.IO registered alias (<i>phive install alias</i>)</li>
+                        <li>Dedicated URL (<i>phive install https://server/file-1.0.0.phar</i>)</li>
+                    </ul>
+                    For PHAR.IO registered aliases a central database file is downloaded to resolve alias names.<br>
+                    No actual hosting of phar files is done at phar.io, so no other runtime dependency to phar.io exists.
+                </p>
+            </div>
+        </div>
+
+        <div class="ym-wrapper layoutcnt2 blau">
+            <div class="ym-wbox list">
+                <h3 class="centered">Why OpenPGP/GnuPG?</h3>
+
+                <p>
+                    GnuPG is the de facto standard for signing distribution packages and is also used to
+                    sign git commits and tags.</p>
+                <p>
+                    It is important that a cryptographically secure means exists to verify the integrity of
+                    release files as well as the authenticity of the signature provided. OpenPGP's design based
+                    on public and private keys as well as the free and open key server systems to share these
+                    public keys provide the optimal infrastructure towards this goal.
+                </p>
+                <p>
+                    For the verification process to work (e.g. the gpg --verify ....), the public part of the private
+                    key used for signing must be known on the system doing the verification. That's why the public key
+                    has to get imported via it's ID (e.g. gpg --keyserver pool.sks-keyservers.net --recv-keys 0x9D8A98B29B2D5D79
+                    for the signing key used by phar.io). Once the public key is in the so called keyring, signatures
+                    "linked" to that key can be verified. Otherwise it would be identical to openssl signatures (see below).
+                </p>
+
+                <p>
+                    As long as the gpg private key is stored securely and privately, it's close to impossible that
+                    anybody else but you can create a signature that can be linked back to that very key. If an attacker
+                    uses a different private key, the verification will fail.
+                </p>
+
+                <p>An attacker of course could create a new key pair claiming to be the original author. That's where the
+                    key ID and fingerprints come into play as those cannot be forged. Well, it probably could but that's
+                    what pretty much all cryptography is based on these days so it's probably reliable enough.
+                </p>
+
+                <p>
+                    Long story short: Of course the phar and signature could be forged but the signer would not match up
+                    with the official signing key and thus the verification would fail. Phive warns if a signing key
+                    changed and asks the user to double check and confirm whether that is correct.
+                </p>
+
+                <p>
+                    That leaves only one problem: On the first install of a phar theoretically the a forged key could
+                    be used and phive wouldn't notice since there is no means detect it yet. That's why upcomings
+                    versions of phive will have known/trusted IDs and public key data available for registered aliases.
+                </p>
+
+                <p>
+                    For everybody else a manual verification of the finger print shown by phive must be performed. For
+                    instance by comparing it with the fingerprint published by the project. At Phar.io for examples we
+                    publish the fingerprint in the footer below to have an independent means of transport.
+                </p>
+            </div>
+        </div>
+
+        <div class="ym-wrapper zitatcnt " id="distributingPhars">
+            <div class="ym-wbox list">
+                <h3>What about OpenSSL signatures?</h3>
+
+                <p>
+                    While OpenSSL signatures can be used to verify that a give file has not been altered once signed,
+                    they do not provide any identity information. Since the signer is not verifiable anybody could create
+                    a garbled phar with a matching pubkey file and there is no easy way to detect the difference from an
+                    official untampered distribution.
+                </p>
+                <p>
+                    OpenSSL signatures as implemented in ext/phar do not provide a means to ensure the signer.
+                    For that to work, we'd need to have a CA-setup with certificates rather than just private and
+                    public keys. While that could of course be potentially interesting to implement, this is a whole
+                    different beast. And for now does not help our goal of secure installations and verifications.
+                </p>
+            </div>
+        </div>
+
+        <div class="ym-wrapper mittelgrau centered" id="footer">
+            <div class="ym-wbox">Copyright &copy; 2015-2017 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The Phar.io Development team</a></div>
+            <span id="keyinfo"><b>GPG Public key information</b>: <b>Id</b> 9B2D5D79 - <b>Fingerprint</b> 6AF7 2527 0AB8 1E04 D794  4254 9D8A 98B2 9B2D 5D79</span>
+            <a class="oben" href="#top">top</a>
+        </div>
+    </body>
+</html>

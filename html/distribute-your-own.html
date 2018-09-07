@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PHAR.IO - Distribute your own</title>
+        <meta name="description" content="The PHAR Installation and Verification Environment (PHIVE): Installation and verification of distributed PHP applications.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all and (min-width:0px)">
+    </head>
+
+    <body>
+        <header id="header-logo">
+            <a href="/"><img src="images/phario.png" alt="Logo PHAR.IO" class="flexible"></a>
+        </header>
+
+        <div class="ym-wrapper topcnt"></div>
+
+        <div class="ym-wrapper layoutcnt" id="content">
+            <div class="ym-wbox">
+                <h3 class="centered">Distributing your own PHARs</h3>
+
+                <p>While you can always provide the fully qualified URL to a phar for installation, having a memorable
+                    alias is of course more convenient. To make your phar based project available to PHIVE users, you
+                    can either use your Github project identifier (username/projectname) or need to register an alias for
+                    it with phar.io. Downloads can be made available using Github releases or you can choose to
+                    provide your own download repository.
+                </p>
+                <p>
+                    To register your alias please provide a PULL Request against the <a href="https://github.com/phar-io/phar.io/blob/master/data/repositories.xml">phar.io database file</a>.
+                </p>
+                <p>For the download repository you currently can choose between two supported repository types:</p>
+
+                <div class="ym-grid">
+                    <div class="ym-g50 ym-gl ym-gbox-left">
+                        <h4>Github releases</h4>
+                        <p>
+                            To distribute phars via Github in a PHIVE compliant way, it needs to be made available as
+                            an attachment to a release - alongside with a valid gpg signature. For PHIVE to pick it up,
+                            the filenames need to end on ".phar" and ".phar.asc" respectively.
+                        </p>
+                        <p>
+                            PHIVE supports Github's releases feature for repositories as of version 0.3.0.
+                        <p>
+                        <p>
+                            <a href="howto/sign-and-upload-to-github.html">See the HowTo for Github releases.</a>
+                        </p>
+
+                    </div>
+                    <div class="ym-g50 ym-gr ym-gbox right">
+                        <h4>Phar.io</h4>
+                        <p>
+                            If you do not want to rely on Github releases for distribution, you can also run your own
+                            repository server. For this to work, merely a TLS enabled webserver and an xml file
+                            providing the necessary meta data is required. You can find an example for such a file <a
+                                href="https://github.com/phar-io/phar.io/blob/master/data/phpab.phive.xml">here</a> (<a
+                                href="https://github.com/phar-io/phar.io/blob/master/data/repository.xsd">XSD</a>). It
+                            is recommended to have this file auto-generated, for instance by using the <a
+                                href="https://github.com/sebastianbergmann/phar-site-generator">Phar-site-generator</a>
+                            by Sebastian Bergmann. <b>Please be aware that only secure downloads via HTTPS are supported
+                            by PHIVE.</b>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ym-wrapper mittelgrau centered" id="footer">
+            <div class="ym-wbox">Copyright &copy; 2015-2018 - <a class="link" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The Phar.io Development team</a></div>
+            <span id="keyinfo"><b>GPG Public key information</b>: <b>Id</b> 9B2D5D79 - <b>Fingerprint</b> 6AF7 2527 0AB8 1E04 D794  4254 9D8A 98B2 9B2D 5D79</span>
+            <a class="oben" href="#top">top</a>
+        </div>
+    </body>
+</html>
