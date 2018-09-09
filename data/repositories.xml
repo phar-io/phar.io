@@ -75,6 +75,9 @@
     <phar alias="ecc" composer="ngabor84/ecc">
         <repository type="github" url="https://api.github.com/repos/ngabor84/ecc/releases" />
     </phar>
+    <phar alias="wp" composer="wp-cli/wp-cli">
+        <repository type="github" url="https://api.github.com/repos/wp-cli/wp-cli/releases" />
+    </phar>
     <phar alias="psh" composer="shopware/psh">
         <repository type="github" url="https://api.github.com/repos/shopwareLabs/psh/releases" />
     </phar>
