@@ -66,8 +66,27 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
 
     </div>
 </div>
+    
+<div class="ym-wrapper layoutcnt alternatecolor1">
+    <div class="ym-wbox">
+        <h3 class="centered">Alternate way to submit your public key to the key servers using the CLI</h3>
+        <pre><code class="language-bash">gpg --keyid-format LONG --list-keys john@example.com
+pub   rsa4096/ABCDEF0123456789 2018-01-01 [SCEA] [expires: 2021-01-01]
+      ABCDEF0123456789ABCDEF0123456789
+uid              [ ultimate ] John Doe <john@example.com>
+            </code></pre>
+        <p>This shows the 16-byte Key-ID right after the key-type and key-size. In this example it's the highlighted part of this line:</p>
+        <p style="font-family:monospaced">pub   rsa4096/<strong>ABCDEF0123456789</strong> 2018-01-01 [SCEA] [expires: 2021-01-01]</p>
+        <p>The next step is to use this Key-ID to send it to the keyserver, in our case the MIT one.</p>
+        <pre><code class="language-bash">gpg --keyserver pgp.mit.edu --send-keys ABCDEF0123456789</code></pre>
+        <h4>Congratulations, you published your public key.</h4>
+        <p>Please allow a couple of minutes for the servers to replicate that information before starting to use the key.</p>
 
-<div class="ym-wrapper layoutcnt2 alternatecolor1">
+    </div>
+</div>
+    
+
+<div class="ym-wrapper layoutcnt2">
     <div class="ym-wbox">
         <div class="ym-wbox">
             <h3 class="centered">General notes on Security</h3>
