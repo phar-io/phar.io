@@ -517,6 +517,25 @@ body {
     background-color: #fff;
 }
 
+
+.cli {
+    background-color: #fff;
+    text-align: left;
+    margin: 1.75rem 0;
+    padding: 1.5rem 10%
+}
+
+.cli comment {
+    color: #888;
+    line-height:1;
+    display:block;
+    margin-bottom:-0.25rem;
+}
+
+.cli code {
+    line-height: 2.2;
+}
+
 .blau, .phive {
     background-color: #EBEEFA;
     color: #000;

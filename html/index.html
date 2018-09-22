@@ -13,7 +13,7 @@
             <a href="/"><img src="images/phario.png" alt="Logo PHAR.IO" class="flexible"></a>
         </header>
 
-        <div class="ym-wrapper topcnt"></div>
+        <div id="top" class="ym-wrapper topcnt"></div>
 
         <div class="ym-wrapper layoutcnt" id="content">
             <div class="ym-wbox">
@@ -74,12 +74,28 @@ sudo mv phive.phar /usr/local/bin/phive</code></pre>
         <div class="ym-wrapper alternatecolor1 layoutcnt2 centered">
             <div class="ym-wbox">
                 <p class="big">Once installed, PHIVE is ready for action. Some example invocations are shown below:</p>
-            <pre><code>phive install phpunit
-phive install theseer/Autoload
-phive install -copy phpdox
-phive install --target ./build/tools phpdox
-phive install https://phar.phpunit.de/phpunit-4.8.6.phar
-</code></pre>
+                <section class="cli">
+                    <comment># Install using phar.io registered alias</comment>
+                    <code>phive install phpunit</code>
+
+                    <comment># Install using github &lt;name&gt;/&lt;repository&gt;</comment>
+                    <code>phive install theseer/Autoload</code>
+
+                    <comment># Ignore security implications and install unsigned phar via github &lt;name&gt;/&lt;repository&gt;</comment>
+                    <code>phive install --force-accept-unsigned composer/composer</code>
+
+                    <comment># Install using a fixed url</comment>
+                    <code>phive install https://phar.phpunit.de/phpunit-7.3.5.phar</code>
+
+                    <comment># When used in CI environments - specify trusted keys and suppress progress output</comment>
+                    <code>phive --no-progress install --trust-gpg-keys 4AA394086372C20A,2A8299CE842DD38C phpab phpunit</code>
+
+                    <comment># Create a copy of the phar rather than using a symlink</comment>
+                    <code>phive install --copy phpdox</code>
+
+                    <comment># Use ./build/tools directory rather than default ./tools as symlink target folder</comment>
+                    <code>phive install --target ./build/tools phpdox</code>
+                </section>
                 <div class="centered error">
                     <span class="big">PHIVE is still under heavy development. Please report any <a style="color: #000;" href="https://github.com/phar-io/phive/issues">issues</a> you find!</span>
                 </div>
