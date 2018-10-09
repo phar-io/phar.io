@@ -85,6 +85,6 @@
         <repository type="github" url="https://api.github.com/repos/shopwareLabs/sw-cli-tools/releases" />
     </phar>
     <phar alias="paratest" composer="brianium/paratest">
-        <repository type="github" url="https://api.github.com/paratestphp/paratest/releases" />
+        <repository type="github" url="https://api.github.com/repos/paratestphp/paratest/releases" />
     </phar>
 </repositories>
