@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories xmlns="https://phar.io/repository-list">
+    <phar alias="phpbench" composer="phpbench/phpbench">
+        <repository type="github" url="https://api.github.com/repos/phpbench/phpbench/releases" />
+    </phar>
     <phar alias="infection" composer="infection/infection">
         <repository type="github" url="https://api.github.com/repos/infection/infection/releases" />
     </phar>
