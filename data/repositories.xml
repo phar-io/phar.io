@@ -28,7 +28,7 @@
         <repository type="github" url="https://api.github.com/repos/nielsdeblaauw/php-doc-check/releases"/>
     </phar>
     <phar alias="dephpend" composer="dephpend/dephpend">
-        <repository url="https://phar.dephpend.com/phive.xml"/>
+        <repository type="github" url="https://api.github.com/repos/mihaeu/dephpend/releases"/>
     </phar>
     <phar alias="phpdocumentor" composer="phpdocumentor/phpdocumentor">
         <repository type="github" url="https://api.github.com/repos/phpdocumentor/phpdocumentor2/releases" />
