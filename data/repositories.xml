@@ -96,4 +96,7 @@
     <phar alias="deptrac" composer="sensiolabs-de/deptrac">
         <repository type="github" url="https://api.github.com/repos/sensiolabs-de/deptrac/releases" />
     </phar>
+    <phar alias="log4php" composer="apache/log4php">
+        <repository type="github" url="https://api.github.com/repos/apache/logging-log4php/releases" />
+    </phar>
 </repositories>
