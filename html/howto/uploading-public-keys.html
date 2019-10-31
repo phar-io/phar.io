@@ -53,14 +53,31 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
 <div class="ym-wrapper layoutcnt">
     <div class="ym-wbox">
         <h3 class="centered">Submit your public key to the key servers</h3>
-        <ul>
-            <li>Go to <code><a
-                    href="https://pgp.mit.edu/">https://pgp.mit.edu/</a></code></li>
-            <li>Paste the content of the file "john_doe.pub" unmodified and including the ----BEGIN and ---END lines
-                into the form
-            </li>
-            <li>Click on "submit this key to the keyserver!"</li>
-        </ul>
+        <p>There are currently two common implementations, the modern <a href="https://gitlab.com/hagrid-keyserver/hagrid/">Hagrid</a>
+            used by openpgp.org and the traditional <a href="https://sks-keyservers.net/">SKS keyservers</a>.
+            While Phive supports both, the modern pool provided by openpgp.org is checked first.</p>
+        <p>While you of course can upload your public key to both pools, for phive to find it uploading to either is sufficient.</p>
+
+        <div class="ym-grid">
+            <div class="ym-g50 ym-gl ym-gbox-left">
+                <h4>Upload to openpgp.org</small></h4>
+                <ul>
+                    <li>Go to a <a href="https://keys.openpgp.org/upload">https://keys.openpgp.org/upload</a></code></li>
+                    <li>Select the file "john_doe.pub" created in the previous step and click on upload.</li>
+                    <li>Follow the instructions sent to you by opengpg.org to finish the registration and proof of ownership</li>
+                </ul>
+            </div>
+
+            <div class="ym-g50 ym-gl ym-gbox-right">
+                <h4>Upload to sks keyserver pool</h4>
+                <ul>
+                    <li>Select a keyserver from the pool that provides a webinterface, for instance <a href="https://pgp.mit.edu/">https://pgp.mit.edu</a></li>
+                    <li>Paste the content of the file "john_doe.pub" unmodified and including the ----BEGIN and ---END lines into the form</li>
+                    <li>Click on "submit this key to the keyserver!"</li>
+                </ul>
+            </div>
+        </div>
+
         <h4>Congratulations, you published your public key.</h4>
         <p>Please allow a couple of minutes for the servers to replicate that information before starting to use the key.</p>
 
@@ -94,8 +111,8 @@ uid              [ ultimate ] John Doe <john@example.com>
                 <li>
                     A keyserver does not make any claims about authenticity. It merely provides an automated means to
                     get a public key based on it's ID. It's up to the user to decide whether the result is to be
-                    trusted, as in whether or not to import the pubic key to the local chain. Do not blindly import
-                    a key but at least verify its fingerprint. The <a href="#keyinfo">phar.io fingerprint information can be found in the footer</a>.
+                    trusted, as in whether or not to import the pubic key to the local chain. <strong>Do not blindly import
+                    a key but at least verify its fingerprint.</strong> The <a href="#keyinfo">phar.io fingerprint information can be found in the footer</a>.
                 </li>
                 <li>
                     Instead of using a keyserver, public keys can of course also be imported directly. Linux
