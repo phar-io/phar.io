@@ -96,4 +96,7 @@
     <phar alias="deptrac" composer="sensiolabs-de/deptrac">
         <repository type="github" url="https://api.github.com/repos/sensiolabs-de/deptrac/releases" />
     </phar>
+    <phar alias="grumphp" composer="phpro/grumphp">
+        <repository type="github" url="https://api.github.com/repos/phpro/grumphp/releases" />
+    </phar>
 </repositories>
