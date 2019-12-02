@@ -99,4 +99,7 @@
     <phar alias="grumphp" composer="phpro/grumphp">
         <repository type="github" url="https://api.github.com/repos/phpro/grumphp/releases" />
     </phar>
+    <phar alias="phpmd" composer="phpmd/phpmd">
+        <repository type="github" url="https://api.github.com/repos/phpmd/phpmd/releases" />
+    </phar>
 </repositories>
