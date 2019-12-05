@@ -102,4 +102,7 @@
     <phar alias="phpmd" composer="phpmd/phpmd">
         <repository type="github" url="https://api.github.com/repos/phpmd/phpmd/releases" />
     </phar>
+    <phar alias="composer-unused" composer="composer-unused/composer-unused">
+        <repository type="github" url="https://api.github.com/repos/composer-unused/composer-unused/releases" />
+    </phar>
 </repositories>
