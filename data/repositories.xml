@@ -108,4 +108,7 @@
     <phar alias="captainhook" composer="captainhook/captainhook">
         <repository type="github" url="https://api.github.com/repos/captainhookphp/captainhook/releases" />
     </phar>
+    <phar alias="composer-normalize" composer="ergebnis/composer-normalize">
+        <repository type="github" url="https://api.github.com/repos/ergebnis/composer-normalize/releases" />
+    </phar>
 </repositories>
