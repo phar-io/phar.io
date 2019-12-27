@@ -105,4 +105,7 @@
     <phar alias="composer-unused" composer="composer-unused/composer-unused">
         <repository type="github" url="https://api.github.com/repos/composer-unused/composer-unused/releases" />
     </phar>
+    <phar alias="captainhook" composer="captainhook/captainhook">
+        <repository type="github" url="https://api.github.com/repos/captainhookphp/captainhook/releases" />
+    </phar>
 </repositories>
