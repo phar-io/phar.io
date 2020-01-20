@@ -111,4 +111,7 @@
     <phar alias="composer-normalize" composer="ergebnis/composer-normalize">
         <repository type="github" url="https://api.github.com/repos/ergebnis/composer-normalize/releases" />
     </phar>
+    <phar alias="rector" composer="rector/rector-prefixed">
+        <repository type="github" url="https://api.github.com/repos/erectorphp/rector-prefixed/releases" />
+    </phar>
 </repositories>
