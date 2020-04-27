@@ -11,6 +11,10 @@ curl_close($ch);
 
 $releases = json_decode($releasesRAW);
 
+if ($releases[0]->draft === true) {
+    array_shift($releases);
+}
+
 $requestedFile = basename($_SERVER['REQUEST_URI']);
 switch($requestedFile) {
     case 'phive.phar': {
