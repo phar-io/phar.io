@@ -11,18 +11,27 @@ curl_close($ch);
 
 $releases = json_decode($releasesRAW);
 
-if ($releases[0]->draft === true) {
-    array_shift($releases);
+$candidate = null;
+foreach($releases as $release) {
+    if ($release->draft === true) {
+        continue;
+    }
+
+    if ($candidate === null || version_compare($release->tag_name, $candidate->tag_name, '>')) {
+        $candidate = $release;
+    }
 }
+
+$release = $candidate;
 
 $requestedFile = basename($_SERVER['REQUEST_URI']);
 switch($requestedFile) {
     case 'phive.phar': {
-        $target = $releases[0]->assets[0]->browser_download_url;
+        $target = $release->assets[0]->browser_download_url;
         break;
     }
     case 'phive.phar.asc': {
-        $target = $releases[0]->assets[1]->browser_download_url;
+        $target = $release->assets[1]->browser_download_url;
         break;
     }
     default: {
@@ -31,10 +40,10 @@ switch($requestedFile) {
 }
 
 if ($target != '') {
-    header('Location: ' . $target , 302);
+    header('Location: ' . $target , true,302);
     die('Forwarded to ' . $target);
 }
 
-header('Not Found', 404);
+header('Not Found', true, 404);
 die('404');
 
