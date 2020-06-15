@@ -111,4 +111,7 @@
     <phar alias="composer-normalize" composer="ergebnis/composer-normalize">
         <repository type="github" url="https://api.github.com/repos/ergebnis/composer-normalize/releases" />
     </phar>
+    <phar alias="backward-compatibility-check" composer="roave/backward-compatibility-check">
+        <repository type="github" url="https://api.github.com/repos/roave/BackwardCompatibilityCheck/releases" />
+    </phar>
 </repositories>
