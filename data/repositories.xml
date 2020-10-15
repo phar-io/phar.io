@@ -12,6 +12,9 @@
     <phar alias="phpcpd" composer="sebastian/phpcpd">
         <repository url="https://phar.phpunit.de/phive.xml"/>
     </phar>
+    <phar alias="phpcov" composer="phpunit/phpcov">
+        <repository url="https://phar.phpunit.de/phive.xml"/>
+    </phar>
     <phar alias="phpdox" composer="theseer/phpdox">
         <repository type="github" url="https://api.github.com/repos/theseer/phpdox/releases" />
     </phar>
