@@ -117,4 +117,7 @@
     <phar alias="bdi" composer="dbrekelmans/browser-driver-installer">
         <repository type="github" url="https://api.github.com/repos/dbrekelmans/browser-driver-installer/releases" />
     </phar>
+    <phar alias="composer" composer="composer/composer">
+        <repository type="github" url="https://api.github.com/repos/composer/composer/releases" />
+    </phar>
 </repositories>
