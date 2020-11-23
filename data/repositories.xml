@@ -120,7 +120,7 @@
     <phar alias="composer" composer="composer/composer">
         <repository type="github" url="https://api.github.com/repos/composer/composer/releases" />
     </phar>
-    <phar alias="wsdltophp-packagegenerator" composer="wsdltophp/packagegenerator">
+    <phar alias="wsdltophp" composer="wsdltophp/packagegenerator">
         <repository type="github" url="https://api.github.com/repos/wsdltophp/packagegenerator/releases" />
     </phar>
 </repositories>
