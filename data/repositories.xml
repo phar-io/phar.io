@@ -123,4 +123,7 @@
     <phar alias="wsdltophp" composer="wsdltophp/packagegenerator">
         <repository type="github" url="https://api.github.com/repos/wsdltophp/packagegenerator/releases" />
     </phar>
+    <phar alias="churn" composer="bmitch/churn-php">
+        <repository type="github" url="https://api.github.com/repos/bmitch/churn-php/releases"/>
+    </phar>
 </repositories>
