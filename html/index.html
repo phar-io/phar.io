@@ -92,6 +92,9 @@ sudo mv phive.phar /usr/local/bin/phive</code></pre>
 
                     <comment># Create a copy of the phar rather than using a symlink</comment>
                     <code>phive install --copy phpdox</code>
+                    
+                    <comment># Install a phar with a specified version constraint</comment>
+                    <code>phive install psalm@^4.1.1</code>
 
                     <comment># Use ./build/tools directory rather than default ./tools as symlink target folder</comment>
                     <code>phive install --target ./build/tools phpdox</code>
