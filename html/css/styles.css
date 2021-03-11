@@ -116,7 +116,7 @@
     }
 
     /* (en) Prevent iOS text size adjust after orientation change, without disabling user zoom. */
-    /* (de) Verdindert die automatische Textanpassung bei Orientierungswechsel, ohne Zoom zu blockieren */
+    /* (de) Verhindert die automatische Textanpassung bei Orientierungswechsel, ohne Zoom zu blockieren */
     html {
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
@@ -392,7 +392,7 @@
     /* skiplinks:technical setup */
     .ym-skiplinks {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: -32768px;
         z-index: 1000;
         width: 100%;
@@ -432,11 +432,11 @@ body {
 }
 
 .layoutcnt {
-    padding: 3rem 0rem;
+    padding: 3rem 0;
 }
 
 .layoutcnt2 {
-    padding: 2rem 0 1.5rem 0rem;
+    padding: 2rem 0 1.5rem 0;
 }
 
 .topcnt, .secondtopcnt {
@@ -570,8 +570,8 @@ body {
 
 .pfeilkasten::after {
     content: "";
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-width: 25px;
     border-style: solid;
     border-color: #FFF transparent transparent;
@@ -599,11 +599,11 @@ body {
 @media only screen and (max-width: 980px) {
 
     .layoutcnt {
-        padding: 1.5rem 0rem;
+        padding: 1.5rem 0;
     }
 
     .layoutcnt2 {
-        padding: 1rem 0rem;
+        padding: 1rem 0;
     }
 
     .ym-wbox {
@@ -652,12 +652,12 @@ body {
 
     .ym-skiplinks {
         position: absolute;
-        top: 0px;
+        top: 0;
         left: -32768px;
         z-index: 100;
         width: 100%;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         list-style-type: none;
     }
 
@@ -671,7 +671,7 @@ body {
     /*--- Headings | Überschriften ------------------------------------------------------------------------*/
     h1, h2, h3, h4, h5, h6 {
         font-weight: 400;
-        margin: 0rem 0rem 0.5rem 0rem;
+        margin: 0 0 0.5rem 0;
         line-height: 1.2;
         word-spacing: 1px;
     }
@@ -722,7 +722,7 @@ body {
     }
 
     h2.inside {
-        margin-top: 0rem;
+        margin-top: 0;
         margin-bottom: 1rem;
     }
 
@@ -782,7 +782,6 @@ body {
     }
 
     dd {
-        margin: 0rem 0rem 1.25rem 0.625rem;
         margin: 0 0 1.5em 0.8em;
     }
 
@@ -953,13 +952,13 @@ body {
     .float-left {
         float: left;
         display: inline;
-        margin: 0rem 1rem 1.25rem 0rem;
+        margin: 0 1rem 1.25rem 0;
     }
 
     .float-right {
         float: right;
         display: inline;
-        margin: 0rem 0rem 1.25rem 1rem;
+        margin: 0 0 1.25rem 1rem;
     }
 
     .center {
@@ -1310,7 +1309,7 @@ body {
     }
 
     .topcnt {
-        padding: 1rem 0rem;
+        padding: 1rem 0;
     }
 
     .topcnt .ym-gl, .topcnt .ym-gr, #footer .ym-gbox-left, #footer .ym-gbox-right {
@@ -1367,8 +1366,8 @@ body {
         padding: 1rem 0 0.75rem;
         margin-top: 1.5rem;
         background-color: #134792;
-        left: 0px;
-        outline: 0px none;
+        left: 0;
+        outline: 0 none;
         position: static;
         width: 100%;
         padding-top: 0.5em;
