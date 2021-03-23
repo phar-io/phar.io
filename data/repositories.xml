@@ -99,8 +99,8 @@
     <phar alias="paratest" composer="brianium/paratest">
         <repository type="github" url="https://api.github.com/repos/paratestphp/paratest/releases" />
     </phar>
-    <phar alias="deptrac" composer="sensiolabs-de/deptrac">
-        <repository type="github" url="https://api.github.com/repos/sensiolabs-de/deptrac/releases" />
+    <phar alias="deptrac" composer="qossmic/deptrac">
+        <repository type="github" url="https://api.github.com/repos/qossmic/deptrac/releases" />
     </phar>
     <phar alias="grumphp" composer="phpro/grumphp">
         <repository type="github" url="https://api.github.com/repos/phpro/grumphp/releases" />
