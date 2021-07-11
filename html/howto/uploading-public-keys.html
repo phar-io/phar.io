@@ -52,12 +52,12 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
 </div>
 <div class="ym-wrapper layoutcnt">
     <div class="ym-wbox">
-        <h3 class="centered">Submit your public key to the key servers</h3>
-        <p>There are currently two common implementations, the modern <a href="https://gitlab.com/hagrid-keyserver/hagrid/">Hagrid</a>
-            used by openpgp.org and the deprecated <a href="https://sks-keyservers.net/">SKS keyservers</a>.
-            Phive checks the modern pool provided by openpgp.org first, only supporting the legacy SKS-keyservers as a fallback.</p>
-        <p>While you of course can upload your public key to both pools, for phive to find it uploading to either is sufficient.</p>
-        <p>Please note: As the sks keyserver pool declared itself deprecated those servers are likey to stop working and support will be removed from Phive without further notice.</p>
+        <h3 class="centered">Submit your public key to the a key server</h3>
+        <p>While Phive will support fetching keys from other sources soon, for now uploading your key to <i>keys.openpgp.org</i> is recommend.</p>
+        <p><b>Phive checks the modern pool provided by openpgp.org first, only supporting the legacy keyservers as a fallback.</b></p>
+        <p>While you of course can upload your public key to both pools, for phive to find it uploading to one is sufficient.</p>
+        <p><b>Please note</b>: The legacy servers sks-keyserver pool has ceased operation. If you did not yet upload your public key to <i>keys.openpgp.org</i>, please do so now.</p>
+        <p>If not found at the aformentioned server, at the time of this writing, phive also checks the keyservers operated by canonical/ubuntu and the MIT.</p>
 
         <div class="ym-grid">
             <div class="ym-g50 ym-gl ym-gbox-left">
@@ -67,12 +67,14 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
                     <li>Select the file "john_doe.pub" created in the previous step and click on upload.</li>
                     <li>Follow the instructions sent to you by opengpg.org to finish the registration and proof of ownership</li>
                 </ul>
+
+                <p><b>Important:</b> <i>keys.openpgp.org</i> strips the UID from the key until ownership is confirmed. The key is useless when no UID is included so make sure you follow the instructions sent to you by openpgp.org.</p>
             </div>
 
             <div class="ym-g50 ym-gl ym-gbox-right">
-                <h4>Upload to sks keyserver pool</h4>
+                <h4>Upload to legacy server</h4>
                 <ul>
-                    <li>Select a keyserver from the pool that provides a webinterface, for instance <a href="https://pgp.mit.edu/">https://pgp.mit.edu</a></li>
+                    <li>Go to <a href="https://pgp.mit.edu/">https://pgp.mit.edu</a></li>
                     <li>Paste the content of the file "john_doe.pub" unmodified and including the ----BEGIN and ---END lines into the form</li>
                     <li>Click on "submit this key to the keyserver!"</li>
                 </ul>
@@ -120,13 +122,6 @@ uid              [ ultimate ] John Doe <john@example.com>
                     distributions for example do that by providing their keys in release-packages or the base OS
                     installation image. Phive will only contact a keyserver in case the key used for signing is not
                     already known, a.k.a can not be found in the local chain.
-                </li>
-                <li>
-                    A single key is not a chain. Other people or organizations, potentially someone trusted, need to
-                    sign your key with theirs, increasing the level of trustworthiness and forming the actual
-                    chain. It's actually the same as with TLS certificates where a CA like letsencrypt signs your key
-                    and since your browser trusts letsencrypt it also trusts your key/certificate. Most projects though
-                    do not co- or cross-sign their release keys.
                 </li>
             </ul>
         </div>
