@@ -1,6 +1,6 @@
-#Welcome to phar.io
+# Welcome to phar.io
 
-##The Phar Installation and Verification Environment (PHIVE) 
+## The Phar Installation and Verification Environment (PHIVE) 
 
 Installation and verification of [phar](https://php.net/phar) distributed PHP applications has never been this easy!
 
@@ -15,7 +15,7 @@ tools. And fight their potential dependency conflicts.
 No more! Now can rely on PHIVE to install and manage your projects tooling needs without all the hassle and without
 cluttered dependencies!
 
-##Getting PHIVE
+## Getting PHIVE
 
 Installation of PHIVE is easy and about the last time you have to do anything phar related manually.
 Grab your copy of PHIVE from the [releases](https://github.com/theseer/PHIVE/releases) section at our github page or
@@ -27,7 +27,7 @@ follow these 5 simple steps:
     chmod +x PHIVE.phar
     sudo mv PHIVE.phar /usr/bin/PHIVE
 
-##Sample Usages
+## Sample Usages
 
 Once installed, PHIVE is ready for action. Some example invocations are shown below:
 
@@ -46,19 +46,19 @@ Once installed, PHIVE is ready for action. Some example invocations are shown be
     PHIVE install --signature https://proprietary.org/sig.asc https://proprietary.org/some.phar 
 
 
-##Adding PHIVE support to your own project
+## Adding PHIVE support to your own project
 
-###Getting started
+### Getting started
 To leverage the power of PHIVE, you don't need to do anything but install the tools you need using the PHIVE executable.
 PHIVE will automatically record your changes in an xml configuration file so you can replay the process as needed. 
 
-###Advanced
+### Advanced
 To support for more advanced uses and to be able to replay an installation, a PHIVE configuration file can of course
 also be added to your project manually. Running ```PHIVE skel``` will get you an annotated example configuration file to
 get you started.
 
 
-##Phar.io Project Database
+## Phar.io Project Database
 
 You can browse and query the phar.io project database to find out which tools are already known by PHIVE here:
    
@@ -66,7 +66,7 @@ You can browse and query the phar.io project database to find out which tools ar
 
 If your application is missing and you want to have it added, please open a ticket and/or supply a pull request.
 
-##Popular Projects
+## Popular Projects
 
 * Composer
 * PHPUnit
@@ -74,7 +74,7 @@ If your application is missing and you want to have it added, please open a tick
 * PHP MessDetector
 * PHP CodeSniffer
  
-##How it works
+## How it works
 
 PHIVE makes installation easy by providing a means to resolve the given alias to an actual download location, including
 the verification of the certificate supplied by the server. Once downloaded, the archive's SHA1/SHA256/SHA512 hash is
@@ -87,7 +87,7 @@ be made in favor of symbolic links (use --copy).
 Phar.io only serves as a central database to resolve alias names but does not provide the actual phar files. If you
 want to be independent of phar.io, simply use the fully qualified url to any PHIVE compatbile repository server.
 
-##PHIVE repository
+## PHIVE repository
 
 To make your phar based project available to PHIVE users, you need to provide a download location either by following
 some simple conventions or by generating a metadata file. The later can be automated using [toolx].
@@ -101,7 +101,7 @@ the resulting HTML document contains links to all downloadable phars. Each phar'
 For each phar an accompanying .asc file has to be provided, containing the OpenPGP/GnuPG or OpenSSL signature.
 
 
-##Contributing
+## Contributing
 
 [Fork us!](https://github.com/theseer/...)
 
