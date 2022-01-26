@@ -135,4 +135,7 @@
     <phar alias="churn" composer="bmitch/churn-php">
         <repository type="github" url="https://api.github.com/repos/bmitch/churn-php/releases"/>
     </phar>
+    <phar alias="phpmetrics" composer="phpmetrics/phpmetrics">
+        <repository type="github" url="https://api.github.com/repos/phpmetrics/PhpMetrics/releases"/>
+    </phar>
 </repositories>
