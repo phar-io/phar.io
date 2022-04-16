@@ -1385,6 +1385,10 @@ body {
         text-decoration: none;
         color: #184a90;
     }
+
+    code {
+        word-break: break-word;
+    }
 }
 
 @media print {
