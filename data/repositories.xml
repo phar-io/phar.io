@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories xmlns="https://phar.io/repository-list">
+    <phar alias="cache-warmup" composer="eliashaeussler/cache-warmup">
+        <repository type="github" url="https://api.github.com/repos/eliashaeussler/cache-warmup/releases" />
+    </phar>
     <phar alias="regression" composer="dzentota/regression">
         <repository type="github" url="https://api.github.com/repos/dzentota/regression/releases" />
     </phar>
