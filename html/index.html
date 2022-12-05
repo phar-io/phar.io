@@ -76,6 +76,15 @@ gpg --verify phive.phar.asc phive.phar
 chmod +x phive.phar
 sudo mv phive.phar /usr/local/bin/phive</code></pre>
             </div>
+            <small>
+                <b>Please note:</b> Importing a gpg public key as shown above does not automatically make it a trusted key.<br/>
+                You are likely to receive a warning from GPG when using it: <q>The key's User ID is not certified with a trusted signature!</q><br/>
+                As a means to verify the correct key is in use, GPG will print the key fingerprint.<br/>
+                If in doubt, please compare it with our published key fingerprint in the footer of this website.<br/>
+                <br/>
+                It's okay to either ignore that warning - given all we care about is ensuring the phar archive has been signed by that very key - or, after inspection,<br/>
+                manually change the trust level to ultimate, for instance via <q>gpg --edit team@phar.io trust</q> or sign the key with your own: <q>gpg --edit team@phar.io sign</q>.
+            </small>
         </div>
         <div class="ym-wrapper zitatcnt dark">
             <h3 id="Usage">Usage</h3>
