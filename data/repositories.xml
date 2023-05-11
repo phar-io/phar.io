@@ -144,4 +144,7 @@
     <phar alias="php-scoper" composer="humbug/php-scoper">
         <repository type="github" url="https://api.github.com/repos/humbug/php-scoper/releases"/>
     </phar>
+    <phar alias="yaml-lint" composer="j13k/yaml-lint">
+        <repository type="github" url="https://api.github.com/repos/j13k/yaml-lint/releases"/>
+    </phar>
 </repositories>
