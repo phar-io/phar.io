@@ -74,7 +74,7 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
                 <ul>
                     <li>Go to a <a href="https://keys.openpgp.org/upload">https://keys.openpgp.org/upload</a></code></li>
                     <li>Select the file "john_doe.pub" created in the previous step and click on upload.</li>
-                    <li>Follow the instructions sent to you by opengpg.org to finish the registration and proof of ownership</li>
+                    <li>Follow the instructions sent to you by openpgp.org to finish the registration and proof of ownership</li>
                 </ul>
 
                 <p><b>Important:</b> <i>keys.openpgp.org</i> strips the UID from the key until ownership is confirmed. The key is useless when no UID is included so make sure you follow the instructions sent to you by openpgp.org.</p>
@@ -102,7 +102,7 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
         <pre><code class="language-bash">gpg --keyid-format LONG --list-keys john@example.com
 pub   rsa4096/ABCDEF0123456789 2018-01-01 [SCEA] [expires: 2021-01-01]
       ABCDEF0123456789ABCDEF0123456789
-uid              [ ultimate ] John Doe <john@example.com>
+uid              [ ultimate ] John Doe %lt;john@example.com&gt;
             </code></pre>
         <p>This shows the 16-byte Key-ID right after the key-type and key-size. In this example it's the highlighted part of this line:</p>
         <p style="font-family:monospaced">pub   rsa4096/<strong>ABCDEF0123456789</strong> 2018-01-01 [SCEA] [expires: 2021-01-01]</p>
@@ -122,8 +122,8 @@ uid              [ ultimate ] John Doe <john@example.com>
             <ul>
                 <li>
                     A keyserver does not make any claims about authenticity. It merely provides an automated means to
-                    get a public key based on it's ID. It's up to the user to decide whether the result is to be
-                    trusted, as in whether or not to import the pubic key to the local chain. <strong>Do not blindly import
+                    get a public key based on its ID. It's up to the user to decide whether the result is to be
+                    trusted, as in whether or not to import the public key to the local chain. <strong>Do not blindly import
                     a key but at least verify its fingerprint.</strong> The <a href="#keyinfo">phar.io fingerprint information can be found in the footer</a>.
                 </li>
                 <li>
