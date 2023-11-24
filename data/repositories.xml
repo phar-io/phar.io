@@ -153,4 +153,7 @@
     <phar alias="yaml-lint" composer="j13k/yaml-lint">
         <repository type="github" url="https://api.github.com/repos/j13k/yaml-lint/releases"/>
     </phar>
+    <phar alias="flow-php" composer="flow-php/flow">
+        <repository type="github" url="https://api.github.com/repos/flow-php/flow/releases"/>
+    </phar>
 </repositories>
