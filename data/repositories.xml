@@ -156,4 +156,7 @@
     <phar alias="flow-php" composer="flow-php/flow">
         <repository type="github" url="https://api.github.com/repos/flow-php/flow/releases"/>
     </phar>
+    <phar alias="cecil" composer="cecil/cecil">
+        <repository type="github" url="https://api.github.com/repos/cecilapp/cecil/releases"/>
+    </phar>
 </repositories>
