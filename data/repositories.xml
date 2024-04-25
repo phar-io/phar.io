@@ -159,7 +159,7 @@
     <phar alias="cecil" composer="cecil/cecil">
         <repository type="github" url="https://api.github.com/repos/cecilapp/cecil/releases"/>
     </phar>
-    <phar alias="phpunit-coverage-check" composer="esi/phpunit-coverage-check">
+    <phar alias="clover-coverage-check" composer="esi/phpunit-coverage-check">
         <repository type="github" url="https://api.github.com/repos/ericsizemore/phpunit-coverage-check/releases"/>
     </phar>
 </repositories>
