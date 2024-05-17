@@ -162,4 +162,7 @@
     <phar alias="clover-coverage-check" composer="esi/phpunit-coverage-check">
         <repository type="github" url="https://api.github.com/repos/ericsizemore/phpunit-coverage-check/releases"/>
     </phar>
+    <phar alias="eqivo" composer="rtckit/eqivo">
+        <repository type="github" url="https://api.github.com/repos/rtckit/eqivo/releases"/>
+    </phar>
 </repositories>
