@@ -165,4 +165,7 @@
     <phar alias="eqivo" composer="rtckit/eqivo">
         <repository type="github" url="https://api.github.com/repos/rtckit/eqivo/releases"/>
     </phar>
+    <phar alias="trap" composer="buggregator/trap">
+        <repository type="github" url="https://api.github.com/repos/buggregator/trap/releases"/>
+    </phar>
 </repositories>
