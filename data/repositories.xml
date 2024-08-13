@@ -168,4 +168,7 @@
     <phar alias="trap" composer="buggregator/trap">
         <repository type="github" url="https://api.github.com/repos/buggregator/trap/releases"/>
     </phar>
+    <phar alias="twig-cs-fixer" composer="vincentlanglet/twig-cs-fixer">
+        <repository type="github" url="https://api.github.com/repos/vincentlanglet/twig-cs-fixer/releases"/>
+    </phar>
 </repositories>
