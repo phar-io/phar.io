@@ -1,0 +1,36 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+$path = __DIR__ . '/../../data/repositories.xml';
+
+$doc = new DOMDocument;
+$doc->load($path);
+
+/** @var DOMElement $repositories */
+$repositories = $doc->getElementsByTagName('repositories')[0];
+
+/** @var DOMElement[] $list */
+$list = $repositories->getElementsByTagName('phar');
+
+$phars = [];
+foreach ($list as $phar) {
+    $phars[$phar->getAttribute('alias')] = $phar;
+}
+
+$phars = array_reverse($phars);
+foreach ($phars as $phar) {
+    $repositories->removeChild($phar);
+}
+
+$repositories->textContent = '';
+ksort($phars);
+
+foreach ($phars as $phar) {
+    $repositories->append(PHP_EOL . '    ');
+    $repositories->appendChild($phar);
+}
+
+$repositories->append(PHP_EOL);
+file_put_contents($path, $doc->saveXML());
