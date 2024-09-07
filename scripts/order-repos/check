@@ -1,0 +1,24 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+$path = __DIR__ . '/../../data/repositories.xml';
+$xml = simplexml_load_string(file_get_contents($path));
+
+/** @var SimpleXMLElement[] $phars */
+$aliases = [];
+foreach ($xml->children() as $phar) {
+    $aliases[] = (string) $phar->attributes()['alias'];
+}
+
+$currentAliases = $aliases;
+sort($aliases);
+
+if ($currentAliases === $aliases) {
+    fwrite(STDOUT, 'Repositories is ordered properly' . PHP_EOL);
+    exit(0);
+}
+
+fwrite(STDERR, 'Repositories is NOT ordered by aliases' . PHP_EOL);
+exit(1);
