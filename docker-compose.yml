@@ -1,0 +1,16 @@
+services:
+    php-fpm:
+        build:
+            context: ./
+            dockerfile: .docker/php/Dockerfile
+        entrypoint: [ '/app/docker-entrypoint.sh' ]
+        environment:
+            PHP_IDE_CONFIG: serverName=phar.local
+            XDEBUG_CONFIG: "client_host=host.docker.internal"
+            XDEBUG_ENABLE: 1
+        expose:
+            - '9003'
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        volumes:
+            - .:/app
