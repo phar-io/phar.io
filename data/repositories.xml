@@ -1,180 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories xmlns="https://phar.io/repository-list">
+    <phar alias="bdi" composer="dbrekelmans/browser-driver-installer">
+        <repository type="github" url="https://api.github.com/repos/dbrekelmans/browser-driver-installer/releases"/>
+    </phar>
     <phar alias="box" composer="humbug/box">
-        <repository type="github" url="https://api.github.com/repos/box-project/box/releases" />
+        <repository type="github" url="https://api.github.com/repos/box-project/box/releases"/>
     </phar>
     <phar alias="cache-warmup" composer="eliashaeussler/cache-warmup">
-        <repository type="github" url="https://api.github.com/repos/eliashaeussler/cache-warmup/releases" />
-    </phar>
-    <phar alias="regression" composer="dzentota/regression">
-        <repository type="github" url="https://api.github.com/repos/dzentota/regression/releases" />
-    </phar>
-    <phar alias="phuml" composer="phuml/phuml">
-        <repository type="github" url="https://api.github.com/repos/MontealegreLuis/phuml/releases" />
-    </phar>
-    <phar alias="doctum" composer="code-lts/doctum">
-        <repository type="github" url="https://api.github.com/repos/code-lts/doctum/releases" />
-    </phar>
-    <phar alias="phpbench" composer="phpbench/phpbench">
-        <repository type="github" url="https://api.github.com/repos/phpbench/phpbench/releases" />
-    </phar>
-    <phar alias="infection" composer="infection/infection">
-        <repository type="github" url="https://api.github.com/repos/infection/infection/releases" />
-    </phar>
-    <phar alias="phpab" composer="theseer/autoload">
-        <repository type="github" url="https://api.github.com/repos/theseer/autoload/releases" />
-    </phar>
-    <phar alias="phpcpd" composer="sebastian/phpcpd">
-        <repository url="https://phar.phpunit.de/phive.xml"/>
-    </phar>
-    <phar alias="phpcov" composer="phpunit/phpcov">
-        <repository url="https://phar.phpunit.de/phive.xml"/>
-    </phar>
-    <phar alias="phpdox" composer="theseer/phpdox">
-        <repository type="github" url="https://api.github.com/repos/theseer/phpdox/releases" />
-    </phar>
-    <phar alias="phploc" composer="phploc/phploc">
-        <repository url="https://phar.phpunit.de/phive.xml"/>
-    </phar>
-    <phar alias="phpunit" composer="phpunit/phpunit">
-        <repository url="https://phar.phpunit.de/phive.xml"/>
-    </phar>
-    <phar alias="phpbu" composer="phpbu/phpbu">
-        <repository url="https://phar.phpbu.de/phive.xml"/>
-    </phar>
-    <phar alias="php-doc-check" composer="nielsdeblaauw/php-doc-check">
-        <repository type="github" url="https://api.github.com/repos/nielsdeblaauw/php-doc-check/releases"/>
-    </phar>
-    <phar alias="dephpend" composer="dephpend/dephpend">
-        <repository type="github" url="https://api.github.com/repos/mihaeu/dephpend/releases"/>
-    </phar>
-    <phar alias="phpdocumentor" composer="phpdocumentor/phpdocumentor">
-        <repository type="github" url="https://api.github.com/repos/phpdocumentor/phpdocumentor2/releases" />
-    </phar>
-    <phar alias="carbon" composer="jpuck/carbon-console">
-        <repository type="github" url="https://api.github.com/repos/jpuck/carbon-console/releases" />
-    </phar>
-    <phar alias="composer-require-checker" composer="maglnet/composer-require-checker">
-        <repository type="github" url="https://api.github.com/repos/maglnet/ComposerRequireChecker/releases" />
-    </phar>
-    <phar alias="phpstan" composer="phpstan/phpstan">
-        <repository type="github" url="https://api.github.com/repos/phpstan/phpstan/releases" />
-    </phar>
-    <phar alias="phpcs" composer="squizlabs/php_codesniffer">
-        <repository url="https://phars.phpcodesniffer.com/phars/phive.xml" />
-    </phar>
-    <phar alias="phpcbf" composer="squizlabs/php_codesniffer">
-        <repository url="https://phars.phpcodesniffer.com/phars/phive.xml" />
-    </phar>
-    <phar alias="n98-magerun" composer="n98/magerun">
-        <repository url="https://files.magerun.net/phive.xml" />
-    </phar>
-    <phar alias="n98-magerun2" composer="n98/magerun2">
-        <repository url="https://files.magerun.net/phive.xml" />
-    </phar>
-    <phar alias="pipelines" composer="ktomk/pipelines">
-        <repository type="github" url="https://api.github.com/repos/ktomk/pipelines/releases" />
-    </phar>
-    <phar alias="phing" composer="phing/phing">
-        <repository type="github" url="https://api.github.com/repos/phingofficial/phing/releases" />
-    </phar>
-    <phar alias="psalm" composer="vimeo/psalm">
-        <repository type="github" url="https://api.github.com/repos/vimeo/psalm/releases" />
-    </phar>
-    <phar alias="clapi" composer="ngabor84/clapi">
-        <repository type="github" url="https://api.github.com/repos/ngabor84/clapi/releases" />
-    </phar>
-    <phar alias="sshman" composer="mwender/sshman">
-        <repository type="github" url="https://api.github.com/repos/mwender/sshman/releases" />
-    </phar>
-    <phar alias="php-coveralls" composer="php-coveralls/php-coveralls">
-        <repository type="github" url="https://api.github.com/repos/php-coveralls/php-coveralls/releases" />
-    </phar>
-    <phar alias="php-cs-fixer" composer="friendsofphp/php-cs-fixer">
-        <repository type="github" url="https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/releases" />
-    </phar>
-    <phar alias="php-cs-fixer-baseline" composer="aeliot/php-cs-fixer-baseline">
-        <repository type="github" url="https://api.github.com/repos/Aeliot-Tm/php-cs-fixer-baseline/releases" />
-    </phar>
-    <phar alias="todo-registrar" composer="aeliot/todo-registrar">
-        <repository type="github" url="https://api.github.com/repos/Aeliot-Tm/todo-registrar/releases" />
-    </phar>
-    <phar alias="phan" composer="phan/phan">
-        <repository type="github" url="https://api.github.com/repos/phan/phan/releases" />
-    </phar>
-    <phar alias="ecc" composer="ngabor84/ecc">
-        <repository type="github" url="https://api.github.com/repos/ngabor84/ecc/releases" />
-    </phar>
-    <phar alias="wp" composer="wp-cli/wp-cli">
-        <repository type="github" url="https://api.github.com/repos/wp-cli/wp-cli/releases" />
-    </phar>
-    <phar alias="psh" composer="shopware/psh">
-        <repository type="github" url="https://api.github.com/repos/shopwareLabs/psh/releases" />
-    </phar>
-    <phar alias="sw-cli-tools" composer="shopwarelabs/sw-cli-tools">
-        <repository type="github" url="https://api.github.com/repos/shopwareLabs/sw-cli-tools/releases" />
-    </phar>
-    <phar alias="paratest" composer="brianium/paratest">
-        <repository type="github" url="https://api.github.com/repos/paratestphp/paratest/releases" />
-    </phar>
-    <phar alias="deptrac" composer="qossmic/deptrac">
-        <repository type="github" url="https://api.github.com/repos/qossmic/deptrac/releases" />
-    </phar>
-    <phar alias="grumphp" composer="phpro/grumphp">
-        <repository type="github" url="https://api.github.com/repos/phpro/grumphp/releases" />
-    </phar>
-    <phar alias="phpmd" composer="phpmd/phpmd">
-        <repository type="github" url="https://api.github.com/repos/phpmd/phpmd/releases" />
-    </phar>
-    <phar alias="pdepend" composer="pdepend/pdepend">
-        <repository type="github" url="https://api.github.com/repos/pdepend/pdepend/releases" />
-    </phar>
-    <phar alias="composer-unused" composer="composer-unused/composer-unused">
-        <repository type="github" url="https://api.github.com/repos/composer-unused/composer-unused/releases" />
+        <repository type="github" url="https://api.github.com/repos/eliashaeussler/cache-warmup/releases"/>
     </phar>
     <phar alias="captainhook" composer="captainhook/captainhook">
-        <repository type="github" url="https://api.github.com/repos/captainhookphp/captainhook/releases" />
+        <repository type="github" url="https://api.github.com/repos/captainhookphp/captainhook/releases"/>
     </phar>
-    <phar alias="composer-normalize" composer="ergebnis/composer-normalize">
-        <repository type="github" url="https://api.github.com/repos/ergebnis/composer-normalize/releases" />
-    </phar>
-    <phar alias="bdi" composer="dbrekelmans/browser-driver-installer">
-        <repository type="github" url="https://api.github.com/repos/dbrekelmans/browser-driver-installer/releases" />
-    </phar>
-    <phar alias="composer" composer="composer/composer">
-        <repository type="github" url="https://api.github.com/repos/composer/composer/releases" />
-    </phar>
-    <phar alias="wsdltophp" composer="wsdltophp/packagegenerator">
-        <repository type="github" url="https://api.github.com/repos/wsdltophp/packagegenerator/releases" />
-    </phar>
-    <phar alias="churn" composer="bmitch/churn-php">
-        <repository type="github" url="https://api.github.com/repos/bmitch/churn-php/releases"/>
-    </phar>
-    <phar alias="php-scoper" composer="humbug/php-scoper">
-        <repository type="github" url="https://api.github.com/repos/humbug/php-scoper/releases"/>
-    </phar>
-    <phar alias="watchr" composer="flavioheleno/watchr">
-        <repository type="github" url="https://api.github.com/repos/flavioheleno/watchr/releases"/>
-    </phar>
-    <phar alias="yaml-lint" composer="j13k/yaml-lint">
-        <repository type="github" url="https://api.github.com/repos/j13k/yaml-lint/releases"/>
-    </phar>
-    <phar alias="flow-php" composer="flow-php/flow">
-        <repository type="github" url="https://api.github.com/repos/flow-php/flow/releases"/>
+    <phar alias="carbon" composer="jpuck/carbon-console">
+        <repository type="github" url="https://api.github.com/repos/jpuck/carbon-console/releases"/>
     </phar>
     <phar alias="cecil" composer="cecil/cecil">
         <repository type="github" url="https://api.github.com/repos/cecilapp/cecil/releases"/>
     </phar>
+    <phar alias="churn" composer="bmitch/churn-php">
+        <repository type="github" url="https://api.github.com/repos/bmitch/churn-php/releases"/>
+    </phar>
+    <phar alias="clapi" composer="ngabor84/clapi">
+        <repository type="github" url="https://api.github.com/repos/ngabor84/clapi/releases"/>
+    </phar>
     <phar alias="clover-coverage-check" composer="esi/phpunit-coverage-check">
         <repository type="github" url="https://api.github.com/repos/ericsizemore/phpunit-coverage-check/releases"/>
     </phar>
+    <phar alias="composer" composer="composer/composer">
+        <repository type="github" url="https://api.github.com/repos/composer/composer/releases"/>
+    </phar>
+    <phar alias="composer-normalize" composer="ergebnis/composer-normalize">
+        <repository type="github" url="https://api.github.com/repos/ergebnis/composer-normalize/releases"/>
+    </phar>
+    <phar alias="composer-require-checker" composer="maglnet/composer-require-checker">
+        <repository type="github" url="https://api.github.com/repos/maglnet/ComposerRequireChecker/releases"/>
+    </phar>
+    <phar alias="composer-unused" composer="composer-unused/composer-unused">
+        <repository type="github" url="https://api.github.com/repos/composer-unused/composer-unused/releases"/>
+    </phar>
+    <phar alias="dephpend" composer="dephpend/dephpend">
+        <repository type="github" url="https://api.github.com/repos/mihaeu/dephpend/releases"/>
+    </phar>
+    <phar alias="deptrac" composer="qossmic/deptrac">
+        <repository type="github" url="https://api.github.com/repos/qossmic/deptrac/releases"/>
+    </phar>
+    <phar alias="doctum" composer="code-lts/doctum">
+        <repository type="github" url="https://api.github.com/repos/code-lts/doctum/releases"/>
+    </phar>
+    <phar alias="ecc" composer="ngabor84/ecc">
+        <repository type="github" url="https://api.github.com/repos/ngabor84/ecc/releases"/>
+    </phar>
     <phar alias="eqivo" composer="rtckit/eqivo">
         <repository type="github" url="https://api.github.com/repos/rtckit/eqivo/releases"/>
+    </phar>
+    <phar alias="flow-php" composer="flow-php/flow">
+        <repository type="github" url="https://api.github.com/repos/flow-php/flow/releases"/>
+    </phar>
+    <phar alias="grumphp" composer="phpro/grumphp">
+        <repository type="github" url="https://api.github.com/repos/phpro/grumphp/releases"/>
+    </phar>
+    <phar alias="infection" composer="infection/infection">
+        <repository type="github" url="https://api.github.com/repos/infection/infection/releases"/>
+    </phar>
+    <phar alias="n98-magerun" composer="n98/magerun">
+        <repository url="https://files.magerun.net/phive.xml"/>
+    </phar>
+    <phar alias="n98-magerun2" composer="n98/magerun2">
+        <repository url="https://files.magerun.net/phive.xml"/>
+    </phar>
+    <phar alias="paratest" composer="brianium/paratest">
+        <repository type="github" url="https://api.github.com/repos/paratestphp/paratest/releases"/>
+    </phar>
+    <phar alias="pdepend" composer="pdepend/pdepend">
+        <repository type="github" url="https://api.github.com/repos/pdepend/pdepend/releases"/>
+    </phar>
+    <phar alias="phan" composer="phan/phan">
+        <repository type="github" url="https://api.github.com/repos/phan/phan/releases"/>
+    </phar>
+    <phar alias="phing" composer="phing/phing">
+        <repository type="github" url="https://api.github.com/repos/phingofficial/phing/releases"/>
+    </phar>
+    <phar alias="php-coveralls" composer="php-coveralls/php-coveralls">
+        <repository type="github" url="https://api.github.com/repos/php-coveralls/php-coveralls/releases"/>
+    </phar>
+    <phar alias="php-cs-fixer" composer="friendsofphp/php-cs-fixer">
+        <repository type="github" url="https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/releases"/>
+    </phar>
+    <phar alias="php-cs-fixer-baseline" composer="aeliot/php-cs-fixer-baseline">
+        <repository type="github" url="https://api.github.com/repos/Aeliot-Tm/php-cs-fixer-baseline/releases"/>
+    </phar>
+    <phar alias="php-doc-check" composer="nielsdeblaauw/php-doc-check">
+        <repository type="github" url="https://api.github.com/repos/nielsdeblaauw/php-doc-check/releases"/>
+    </phar>
+    <phar alias="php-scoper" composer="humbug/php-scoper">
+        <repository type="github" url="https://api.github.com/repos/humbug/php-scoper/releases"/>
+    </phar>
+    <phar alias="phpab" composer="theseer/autoload">
+        <repository type="github" url="https://api.github.com/repos/theseer/autoload/releases"/>
+    </phar>
+    <phar alias="phpbench" composer="phpbench/phpbench">
+        <repository type="github" url="https://api.github.com/repos/phpbench/phpbench/releases"/>
+    </phar>
+    <phar alias="phpbu" composer="phpbu/phpbu">
+        <repository url="https://phar.phpbu.de/phive.xml"/>
+    </phar>
+    <phar alias="phpcbf" composer="squizlabs/php_codesniffer">
+        <repository url="https://phars.phpcodesniffer.com/phars/phive.xml"/>
+    </phar>
+    <phar alias="phpcov" composer="phpunit/phpcov">
+        <repository url="https://phar.phpunit.de/phive.xml"/>
+    </phar>
+    <phar alias="phpcpd" composer="sebastian/phpcpd">
+        <repository url="https://phar.phpunit.de/phive.xml"/>
+    </phar>
+    <phar alias="phpcs" composer="squizlabs/php_codesniffer">
+        <repository url="https://phars.phpcodesniffer.com/phars/phive.xml"/>
+    </phar>
+    <phar alias="phpdocumentor" composer="phpdocumentor/phpdocumentor">
+        <repository type="github" url="https://api.github.com/repos/phpdocumentor/phpdocumentor2/releases"/>
+    </phar>
+    <phar alias="phpdox" composer="theseer/phpdox">
+        <repository type="github" url="https://api.github.com/repos/theseer/phpdox/releases"/>
+    </phar>
+    <phar alias="phploc" composer="phploc/phploc">
+        <repository url="https://phar.phpunit.de/phive.xml"/>
+    </phar>
+    <phar alias="phpmd" composer="phpmd/phpmd">
+        <repository type="github" url="https://api.github.com/repos/phpmd/phpmd/releases"/>
+    </phar>
+    <phar alias="phpstan" composer="phpstan/phpstan">
+        <repository type="github" url="https://api.github.com/repos/phpstan/phpstan/releases"/>
+    </phar>
+    <phar alias="phpunit" composer="phpunit/phpunit">
+        <repository url="https://phar.phpunit.de/phive.xml"/>
+    </phar>
+    <phar alias="phuml" composer="phuml/phuml">
+        <repository type="github" url="https://api.github.com/repos/MontealegreLuis/phuml/releases"/>
+    </phar>
+    <phar alias="pipelines" composer="ktomk/pipelines">
+        <repository type="github" url="https://api.github.com/repos/ktomk/pipelines/releases"/>
+    </phar>
+    <phar alias="psalm" composer="vimeo/psalm">
+        <repository type="github" url="https://api.github.com/repos/vimeo/psalm/releases"/>
+    </phar>
+    <phar alias="psh" composer="shopware/psh">
+        <repository type="github" url="https://api.github.com/repos/shopwareLabs/psh/releases"/>
+    </phar>
+    <phar alias="regression" composer="dzentota/regression">
+        <repository type="github" url="https://api.github.com/repos/dzentota/regression/releases"/>
+    </phar>
+    <phar alias="sshman" composer="mwender/sshman">
+        <repository type="github" url="https://api.github.com/repos/mwender/sshman/releases"/>
+    </phar>
+    <phar alias="sw-cli-tools" composer="shopwarelabs/sw-cli-tools">
+        <repository type="github" url="https://api.github.com/repos/shopwareLabs/sw-cli-tools/releases"/>
+    </phar>
+    <phar alias="todo-registrar" composer="aeliot/todo-registrar">
+        <repository type="github" url="https://api.github.com/repos/Aeliot-Tm/todo-registrar/releases"/>
     </phar>
     <phar alias="trap" composer="buggregator/trap">
         <repository type="github" url="https://api.github.com/repos/buggregator/trap/releases"/>
     </phar>
     <phar alias="twig-cs-fixer" composer="vincentlanglet/twig-cs-fixer">
         <repository type="github" url="https://api.github.com/repos/vincentlanglet/twig-cs-fixer/releases"/>
+    </phar>
+    <phar alias="watchr" composer="flavioheleno/watchr">
+        <repository type="github" url="https://api.github.com/repos/flavioheleno/watchr/releases"/>
+    </phar>
+    <phar alias="wp" composer="wp-cli/wp-cli">
+        <repository type="github" url="https://api.github.com/repos/wp-cli/wp-cli/releases"/>
+    </phar>
+    <phar alias="wsdltophp" composer="wsdltophp/packagegenerator">
+        <repository type="github" url="https://api.github.com/repos/wsdltophp/packagegenerator/releases"/>
+    </phar>
+    <phar alias="yaml-lint" composer="j13k/yaml-lint">
+        <repository type="github" url="https://api.github.com/repos/j13k/yaml-lint/releases"/>
     </phar>
 </repositories>
