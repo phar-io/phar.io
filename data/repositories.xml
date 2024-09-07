@@ -96,6 +96,9 @@
     <phar alias="php-cs-fixer-baseline" composer="aeliot/php-cs-fixer-baseline">
         <repository type="github" url="https://api.github.com/repos/Aeliot-Tm/php-cs-fixer-baseline/releases" />
     </phar>
+    <phar alias="todo-registrar" composer="aeliot/todo-registrar">
+        <repository type="github" url="https://api.github.com/repos/Aeliot-Tm/todo-registrar/releases" />
+    </phar>
     <phar alias="phan" composer="phan/phan">
         <repository type="github" url="https://api.github.com/repos/phan/phan/releases" />
     </phar>
