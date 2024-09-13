@@ -147,6 +147,9 @@
     <phar alias="psh" composer="shopware/psh">
         <repository type="github" url="https://api.github.com/repos/shopwareLabs/psh/releases"/>
     </phar>
+    <phar alias="rector" composer="rector/rector">
+        <repository type="github" url="https://api.github.com/repos/rectorphp/rector/releases"/>
+    </phar>
     <phar alias="regression" composer="dzentota/regression">
         <repository type="github" url="https://api.github.com/repos/dzentota/regression/releases"/>
     </phar>
