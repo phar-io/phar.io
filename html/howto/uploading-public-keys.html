@@ -81,9 +81,9 @@ mQGiBEm7B54RBADhXaYmvUdBoyt5wAi......=vEm7B54RBADh9dmP
             </div>
 
             <div class="ym-g50 ym-gl ym-gbox-right">
-                <h4>Upload to legacy server</h4>
+                <h4>Upload to legacy server (optional)</h4>
                 <ul>
-                    <li>Go to <a href="https://pgp.mit.edu/">https://pgp.mit.edu</a></li>
+                    <li>Go to <a href="https://keyserver.ubuntu.com/#submitKey">https://keyserver.ubuntu.com</a></li>
                     <li>Paste the content of the file "john_doe.pub" unmodified and including the ----BEGIN and ---END lines into the form</li>
                     <li>Click on "submit this key to the keyserver!"</li>
                 </ul>
@@ -107,7 +107,7 @@ uid              [ ultimate ] John Doe &lt;john@example.com&gt;
         <p>This shows the 16-byte Key-ID right after the key-type and key-size. In this example it's the highlighted part of this line:</p>
         <p style="font-family:monospaced">pub   rsa4096/<strong>ABCDEF0123456789</strong> 2018-01-01 [SCEA] [expires: 2021-01-01]</p>
         <p>The next step is to use this Key-ID to send it to the keyserver, in our case the MIT one.</p>
-        <pre><code class="language-bash">gpg --keyserver pgp.mit.edu --send-keys ABCDEF0123456789</code></pre>
+        <pre><code class="language-bash">gpg --keyserver keyserver.ubuntu.com --send-keys ABCDEF0123456789</code></pre>
         <h4>Congratulations, you published your public key.</h4>
         <p>Please allow a couple of minutes for the servers to replicate that information before starting to use the key.</p>
 
@@ -138,12 +138,12 @@ uid              [ ultimate ] John Doe &lt;john@example.com&gt;
 </div>
 
 <div class="ym-wrapper mittelgrau centered" id="footer">
-    <div class="ym-wbox">Copyright &copy; 2015-2022 - <a class="link"
+    <div class="ym-wbox">Copyright &copy; 2015-2024 - <a class="link"
                                                          href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;%74%65%61%6d@%70%68%61%72.%69%6f">The
         Phar.io Development team</a>
     </div>
     <span id="keyinfo">
-        <b>GPG Public key information</b>: <b>Id</b> 0x9D8A98B29B2D5D79 - <b>Fingerprint</b> 6AF7 2527 0AB8 1E04 D794  4254 9D8A 98B2 9B2D 5D79
+        <b>GPG Public key information</b>: <b>Id</b> 0x9D8A98B29B2D5D79 - <b>Fingerprint</b> 6AF7 2527 0AB8 1E04 D794 4254 9D8A 98B2 9B2D 5D79
     </span>
     <a class="oben" href="#top">top</a>
 </div>
