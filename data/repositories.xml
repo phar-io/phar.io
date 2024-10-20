@@ -39,7 +39,7 @@
     <phar alias="composer-unused" composer="composer-unused/composer-unused">
         <repository type="github" url="https://api.github.com/repos/composer-unused/composer-unused/releases"/>
     </phar>
-    <phar alias="dep" composer="deployer/deployer">
+    <phar alias="deployer" composer="deployer/deployer">
         <repository type="github" url="https://api.github.com/repos/deployphp/deployer/releases"/>
     </phar>
     <phar alias="dephpend" composer="dephpend/dephpend">
