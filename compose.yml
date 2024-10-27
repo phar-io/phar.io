@@ -1,0 +1,8 @@
+services:
+  php-fpm:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    entrypoint: [ '/app/docker-entrypoint.sh' ]
+    volumes:
+      - .:/app
