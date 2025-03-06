@@ -45,8 +45,8 @@
     <phar alias="dephpend" composer="dephpend/dephpend">
         <repository type="github" url="https://api.github.com/repos/mihaeu/dephpend/releases"/>
     </phar>
-    <phar alias="deptrac" composer="qossmic/deptrac">
-        <repository type="github" url="https://api.github.com/repos/qossmic/deptrac/releases"/>
+    <phar alias="deptrac" composer="deptrac/deptrac">
+        <repository type="github" url="https://api.github.com/repos/deptrac/deptrac/releases"/>
     </phar>
     <phar alias="doctum" composer="code-lts/doctum">
         <repository type="github" url="https://api.github.com/repos/code-lts/doctum/releases"/>
