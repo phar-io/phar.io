@@ -15,10 +15,17 @@ foreach ($xml->children() as $phar) {
 $currentAliases = $aliases;
 sort($aliases);
 
-if ($currentAliases === $aliases) {
-    fwrite(STDOUT, 'Repositories is ordered properly' . PHP_EOL);
-    exit(0);
+if ($currentAliases != $aliases) {
+    fwrite(STDOUT, 'Repositories are not ordered properly:' . PHP_EOL);
+    foreach ($aliases as $index => $alias) {
+        if ($alias !== $currentAliases[$index]) {
+            fwrite(
+                STDOUT,
+                ' - expected \'' . $alias . '\' got \'' . $currentAliases[$index] . '\'' . PHP_EOL
+            );
+            exit(1);
+        }
+    }
 }
-
-fwrite(STDERR, 'Repositories is NOT ordered by aliases' . PHP_EOL);
-exit(1);
+fwrite(STDOUT, 'Repositories are ordered properly' . PHP_EOL);
+exit(0);

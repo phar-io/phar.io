@@ -39,11 +39,11 @@
     <phar alias="composer-unused" composer="composer-unused/composer-unused">
         <repository type="github" url="https://api.github.com/repos/composer-unused/composer-unused/releases"/>
     </phar>
-    <phar alias="deployer" composer="deployer/deployer">
-        <repository type="github" url="https://api.github.com/repos/deployphp/deployer/releases"/>
-    </phar>
     <phar alias="dephpend" composer="dephpend/dephpend">
         <repository type="github" url="https://api.github.com/repos/mihaeu/dephpend/releases"/>
+    </phar>
+    <phar alias="deployer" composer="deployer/deployer">
+        <repository type="github" url="https://api.github.com/repos/deployphp/deployer/releases"/>
     </phar>
     <phar alias="deptrac" composer="deptrac/deptrac">
         <repository type="github" url="https://api.github.com/repos/deptrac/deptrac/releases"/>
