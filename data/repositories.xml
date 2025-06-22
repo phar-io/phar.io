@@ -106,7 +106,7 @@
         <repository type="github" url="https://api.github.com/repos/phpbench/phpbench/releases"/>
     </phar>
     <phar alias="phpbu" composer="phpbu/phpbu">
-        <repository url="https://phar.phpbu.de/phive.xml"/>
+        <repository type="github" url="https://api.github.com/repos/sebastianfeldmann/phpbu/releases"/>
     </phar>
     <phar alias="phpcbf" composer="squizlabs/php_codesniffer">
         <repository url="https://phars.phpcodesniffer.com/phars/phive.xml"/>
