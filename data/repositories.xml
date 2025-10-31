@@ -102,6 +102,9 @@
     <phar alias="phpab" composer="theseer/autoload">
         <repository type="github" url="https://api.github.com/repos/theseer/autoload/releases"/>
     </phar>
+    <phar alias="phparkitect" composer="phparkitect/phparkitect">
+        <repository type="github" url="https://api.github.com/repos/phparkitect/arkitect/releases"/>
+    </phar>
     <phar alias="phpbench" composer="phpbench/phpbench">
         <repository type="github" url="https://api.github.com/repos/phpbench/phpbench/releases"/>
     </phar>
