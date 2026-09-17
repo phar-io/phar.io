@@ -66,6 +66,9 @@
     <phar alias="infection" composer="infection/infection">
         <repository type="github" url="https://api.github.com/repos/infection/infection/releases"/>
     </phar>
+    <phar alias="lockrot" composer="somework/lockrot">
+        <repository type="github" url="https://api.github.com/repos/somework/lockrot/releases"/>
+    </phar>
     <phar alias="n98-magerun" composer="n98/magerun">
         <repository url="https://files.magerun.net/phive.xml"/>
     </phar>
